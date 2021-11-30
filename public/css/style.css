@@ -1,12 +1,14 @@
 html {
     font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 .tab-button {
     transition-duration: 0.5s;
-    background-color: #4CAF50;
-    border: none;
-    color: white;
+    background-color: white;
+    border: 1px solid black;
+    color: black;
     padding: 8px;
     text-align: center;
     text-decoration: none;
@@ -14,7 +16,7 @@ html {
     font-size: 24px;
     margin: 8px;
     cursor: pointer;
-    width: 150px;
+    width: 200px;
 }
 
 .tab-button:hover {
@@ -28,4 +30,64 @@ html {
     left: 50%;
     transform: translate(-50%, 0%);
     text-align: center;
+    width: 90%;
 }
+
+.triple-column {
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+  }
+
+.column {
+    float: left;
+    width: 33.33%;
+
+}
+
+.radio-button {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 80%;
+  }
+  
+  .radio-button label, .radio-button input {
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  /* Hide classic radio "check circle" */
+  .radio-button input[type="radio"] {
+    opacity: 0.01;
+    z-index: 100;
+  }
+  
+  .radio-button input[type="radio"]:checked+label, .Checked+label {
+    background: gray;
+  }
+  
+  .radio-button label {
+    padding: 5px;
+    border: 1px solid #CCC;
+    cursor: pointer;
+    z-index: 90;
+  }
+  
+  .radio-button label:hover {
+    background: #DDD;
+  }
+
+  #submit-button {
+
+  }
+  
+  #submit-button:hover {
+    background-color: gray;
+    color: white;
+  }
+
