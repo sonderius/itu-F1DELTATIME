@@ -1,3 +1,31 @@
 html {
     font-family: 'Roboto', sans-serif;
 }
+
+.tab-button {
+    transition-duration: 0.5s;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    margin: 8px;
+    cursor: pointer;
+    width: 150px;
+}
+
+.tab-button:hover {
+    background-color: gray;
+    color: white;
+  }
+
+.horizontal-center {
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    text-align: center;
+}

@@ -6,6 +6,17 @@
     </head>
 
     <body>
-        <p>Hello World</p>
+        <div class="horizontal-center">
+            <a href="#" class="tab-button">Calculator</a>
+            <a href="#" class="tab-button">My Setups</a>
+            <a href="#" class="tab-button">Tracks</a>
+
+            <h1>Season</h1>
+
+            <a href="#" class="tab-button">2019</a>
+            <a href="#" class="tab-button">2020</a>
+
+
+        </div> <!-- horizontal-center -->
     </body>
 </html>
