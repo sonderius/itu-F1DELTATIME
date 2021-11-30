@@ -48,9 +48,9 @@ html {
 
 .radio-button {
     width: 100%;
-  }
+}
   
-  .radio-button label, .radio-button input {
+.radio-button label, .radio-button input {
     display: block;
     top: 0;
     left: 0;
@@ -59,49 +59,48 @@ html {
     transition-duration: 0.3s;
     width: 80%;
     margin-left: 8%; /* 10% out of 80% = 8% */
-  }
+}
   
-  /* Hide classic radio "check circle" */
-  .radio-button input[type="radio"] {
+/* Hide classic radio "check circle" */
+.radio-button input[type="radio"] {
     opacity: 0.001;
     z-index: 100;
-  }
+}
   
-  .radio-button input[type="radio"]:checked+label, .Checked+label {
+.radio-button input[type="radio"]:checked+label, .Checked+label {
     background: gray;
-  }
+}
   
-  .radio-button label {
+.radio-button label {
     padding: 5px;
     border: 1px solid #CCC;
     cursor: pointer;
     z-index: 90;
-  }
-  
-  .radio-button label:hover {
+}
+ 
+.radio-button label:hover {
     background: #DDD;
-  }
+}
 
-  #submit-button {
+#submit-button {
 
-  }
+}
   
-  #submit-button:hover {
+#submit-button:hover {
     background-color: gray;
     color: white;
-  }
+}
 
-  #submit-button:active {
+#submit-button:active {
     background-color: green;
     color: white;
-  }
+}
 
-
-  #active-tab {
+#active-tab {
     background-color: gray;
     border: 1px solid black;
     color: white;
-  }
+}
 
 .season-button {
     display: inline-block;
@@ -115,4 +114,4 @@ html {
     transition-duration: 0.3s;
     width: 100%;
     margin-left: 0%;
-  }
+}
