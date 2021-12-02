@@ -16,17 +16,17 @@ function startCalculating() {
     //a message is received
     es.addEventListener('message', function(e) {
         var result = JSON.parse(e.data);
+        var elem = document.getElementById('myBar');
 
         if(e.lastEventId == 'CLOSE') {
             es.close();
-            var elem = document.getElementById('myBar');
             elem.style.width = 100 + '%';
             elem.innerHTML = 100  + '%';
         }
         else {
-            var elem = document.getElementById('myBar');
-            elem.style.width = result.progress * 100 + '%';
-            elem.innerHTML = result.progress * 100  + '%';
+            var res = Math.round(result.progress * 100) + '%';
+            elem.style.width = res;
+            elem.innerHTML = res;
 
             if (result.message != null) {
                 var table = document.getElementById('table');

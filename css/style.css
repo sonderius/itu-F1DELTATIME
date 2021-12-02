@@ -4,6 +4,30 @@ html {
     padding: 0;
 }
 
+#calculator {
+    display: block;
+}
+
+#setup {
+    display: none;
+}
+
+#track {
+    display: none;
+}
+
+#myBar {
+    width:0%; background-color: green;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.myBarGray {
+    width:100%;
+    background-color: gray;
+    border-radius: 25px;
+}
+
 .tab-button {
     transition-duration: 0.5s;
     background-color: white;
@@ -48,6 +72,13 @@ html {
 
 .radio-button {
     width: 100%;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    margin: 8px;
+    width: 300px;
 }
   
 .radio-button label, .radio-button input {
@@ -81,10 +112,6 @@ html {
 .radio-button label:hover {
     background: #DDD;
 }
-
-#submit-button {
-
-}
   
 #submit-button:hover {
     background-color: gray;
@@ -113,7 +140,6 @@ html {
     bottom: 0;
     transition-duration: 0.3s;
     width: 100%;
-    margin-left: 0%;
 }
 
 table {
