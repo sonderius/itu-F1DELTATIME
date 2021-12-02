@@ -178,6 +178,3 @@
     </div>
 
 </div>
-
-<script src="/scripts/calculator.js"></script>
-        <script src="/scripts/detail.js"></script>

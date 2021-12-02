@@ -4,6 +4,10 @@ html {
     padding: 0;
 }
 
+#header {
+    background-color: rgb(50, 150, 200);
+}
+
 #calculator {
     display: block;
 }
@@ -16,7 +20,7 @@ html {
     display: none;
 }
 
-#myBar {
+#myBarValue {
     width:0%; background-color: green;
     border-radius: 25px;
     text-align: center;
@@ -224,4 +228,48 @@ p img {
 
 .invert{
     filter: invert(100%);
+}
+
+.login_window {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 70px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+  
+/* Modal Content/Box */
+.login_window-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 25%; /* Could be more or less, depending on screen size */
+}
+  
+  /* The Close Button */
+.close,
+.login_window_close,
+.register_window_close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+.close:hover,
+.close:focus,
+.login_window_close:hover,
+.login_window_close:focus,
+.register_window_close:hover,
+.register_window_close:focus  {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }

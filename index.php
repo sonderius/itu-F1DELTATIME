@@ -4,6 +4,7 @@
         <link rel= "stylesheet" href= "css/style.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
         <title>F1 Delta Time</title>
@@ -11,30 +12,20 @@
 
     <body>  
 
-        <div class="row">
-            <div class="col-md-4 text-right">
-                <button class="tab-button" onclick="changePage('calculator')">Calculator</button>
-            </div>
-
-            <div class="col-md-4 text-center">
-                <button class="tab-button" onclick="changePage('setup')">My setups</button>
-            </div>
-
-            <div class="col-md-4 text-left">
-                <button class="tab-button" onclick="changePage('track')">Tracks</button>
-            </div>
-        </div>
-
         <?php
+            include "php/header.php";
             include "php/calculator.php";
             include "php/setup.php";
             include "php/track.php";
             include "php/modal.php";
+            include "php/login.php";
+            include "php/register.php";
         ?>
 
     </body>
 </html>
 
+<script src="scripts/login.js"></script>
 <script src="scripts/calculator.js"></script>
 <script src="scripts/detail.js"></script>
 
