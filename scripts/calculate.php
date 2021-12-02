@@ -2,11 +2,10 @@
 include './logic.php';
 
 header('Content-Type: text/event-stream');
-// recommended to prevent caching of event data.
 header('Cache-Control: no-cache');
 
-function send_message($id, $message, $progress) {
-    $d = array('message' => $message , 'progress' => $progress);
+function send_message($id, $message, $setupId, $progress) {
+    $d = array('message' => $message , 'progress' => $progress, 'setupId' => $setupId);
 
     echo "id: $id" . PHP_EOL;
     echo "data: " . json_encode($d) . PHP_EOL;
@@ -44,7 +43,7 @@ function calculateSetup($parts, $tier, $preferredStat) {
                                                                 $progress++;
                                                                 if ($progress / $possibleSetupsCount > $oldProgress + 0.01) {
                                                                     $oldProgress = $progress / $possibleSetupsCount;
-                                                                    send_message($setupId, null, $oldProgress);
+                                                                    send_message('PROGRESS', null, null, $oldProgress);
                                                                 }
                                                                 $setupStats = setupStats($setupId, $parts);
                                                                 if ($setupStats[0] > $tier)
@@ -52,7 +51,7 @@ function calculateSetup($parts, $tier, $preferredStat) {
                                                                 if (($setupStats[$preferredStat] > $bestSetup[$preferredStat]) ||
                                                                     (($setupStats[$preferredStat] == $bestSetup[$preferredStat]) && ($setupStats[0] >= $bestSetup[0]))) {
                                                                     $bestSetup = $setupStats;
-                                                                    send_message($setupId, $bestSetup, $oldProgress);
+                                                                    send_message('SETUP', $bestSetup, $setupId, $oldProgress);
                                                                 }
                                                             }
                                                             $setupId[14] = 0;
@@ -85,6 +84,46 @@ function calculateSetup($parts, $tier, $preferredStat) {
     }
 }
 
-calculateSetup(loadParts('../data/parts'), Tier::C, Stats::Speed);
+$tier = Tier::A;
 
-send_message('CLOSE', 'Process complete', 1);
+switch ($_GET['tier']) {
+    case 'a':
+        $tier = Tier::A;
+        break;
+    case 'b':
+        $tier = Tier::B;
+        break;
+    case 'c':
+        $tier = Tier::C;
+        break;
+    case 'd':
+        $tier = Tier::D;
+        break;
+}
+
+$stat = Stats::Speed;
+
+switch ($_GET['attribute']) {
+    case 'speed':
+        $stat = Stats::Speed;
+        break;
+    case 'acceleration':
+        $stat = Stats::Acceleration;
+        break;
+    case 'grip':
+        $stat = Stats::Grip;
+        break;
+    case 'stamina':
+        $stat = Stats::Stamina;
+        break;
+    case 'aggression':
+        $stat = Stats::Aggression;
+        break;
+    case 'concentration':
+        $stat = Stats::Concentration;
+        break;
+}
+
+calculateSetup(loadParts('../data/' . $_GET['season'] . '/parts.csv'), $tier, $stat);
+
+send_message('CLOSE', 'Process complete', null, 1);

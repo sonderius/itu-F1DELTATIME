@@ -11,7 +11,7 @@ function getSelectedRadioButton(name) {
 
 function startCalculating() {
     es = new EventSource('../scripts/calculate.php?season=' + getSelectedRadioButton("season") + '&tier=' + getSelectedRadioButton("tier") + '&tyre=' + getSelectedRadioButton("tyres")
-        + '&attribute=' + getSelectedRadioButton("preffered-attribute"));
+        + '&attribute=' + getSelectedRadioButton("preferred-attribute"));
 
     //a message is received
     es.addEventListener('message', function(e) {
@@ -38,6 +38,8 @@ function startCalculating() {
                     cell.innerHTML = result.message[i];
                 }
                 var cell = row.insertCell(result.message.length);
+                cell.innerHTML = '<button type="button" onclick="showDetail(this)">D</button><button type="button" onclick="save(this)">S</button>';
+                cell.id = result.setupId;
             }
         }
     });

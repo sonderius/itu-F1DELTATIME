@@ -1,32 +1,76 @@
 <html>
     <head>
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-        <link rel= "stylesheet" href= "css/style.css">
+        <link rel= "stylesheet" href= "./css/style.css">
         <title>Calculator</title>
-        <script src="../scripts/calculator.js"></script>
-        <style>
-            table {
-                font-family: arial, sans-serif;
-                border-collapse: collapse;
-                margin-left: auto;
-                margin-right: auto;
-                width: 100%;
-            }
-
-            td, th {
-                border: 1px solid #dddddd;
-                text-align: center;
-                padding: 8px;
-                width: 10%;
-            }
-
-            tr:nth-child(even) {
-                background-color: #dddddd;
-            }
-        </style>
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     </head>
     <body>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div id="setupDetail" class="grid-container">
+                    <div class="grid-item"></div>
+                    <div class="grid-item"><img src="../Images/Parts/car.png"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"><img src="../Images/Parts/tyres.png"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"><img src="../Images/Parts/turbo.png"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"><img src="../Images/Parts/suspension.png"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"><img src="../Images/Parts/brakes.png"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"><img src="../Images/Parts/rearWing.png"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"><img src="../Images/Parts/battery.png"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"><img src="../Images/Parts/frontWing.png"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"><img src="../Images/Parts/ice.png"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"><img src="../Images/Parts/gearbox.png"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"><img src="../Images/Parts/driver.png"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"><img src="../Images/Parts/gloves.png"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"><img src="../Images/Parts/boots.png"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"><img src="../Images/Parts/helmet.png"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"><img src="../Images/Parts/suit.png"></div>
+                </div>
+                <div>
+                    <table>
+                        <tr>
+                            <th>Total</th>
+                            <th>Car</th>
+                            <th>Driver</th>
+                            <th>Top Speed</th>
+                            <th>Acceleration</th>
+                            <th>Grip</th>
+                            <th>Stamina</th>
+                            <th>Aggression</th>
+                            <th>Concentration</th>
+                        </tr>
+                        <tr id="detailRow">
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
         <div class="horizontal-center">
             <a href="./calculator.php" class="tab-button" id="active-tab">Calculator</a>
             <a href="./setups.php" class="tab-button">My Setups</a>
@@ -72,18 +116,18 @@
                     </div> <!-- column -->
                     <div class="column">
                         <div class="radio-button">
-                            <h2>Preffered attribute</h2>
-                            <input type="radio" id="speed" name="preffered-attribute" required />
+                            <h2>Preferred attribute</h2>
+                            <input type="radio" id="speed" name="preferred-attribute" required />
                             <label for="speed">Speed</label>
-                            <input type="radio" id="acceleration" name="preffered-attribute" />
+                            <input type="radio" id="acceleration" name="preferred-attribute" />
                             <label for="acceleration">Acceleration</label>
-                            <input type="radio" id="grip" name="preffered-attribute" />
+                            <input type="radio" id="grip" name="preferred-attribute" />
                             <label for="grip">Grip</label>
-                            <input type="radio" id="stamina" name="preffered-attribute" />
+                            <input type="radio" id="stamina" name="preferred-attribute" />
                             <label for="stamina">Stamina</label>
-                            <input type="radio" id="agression" name="preffered-attribute" />
-                            <label for="agression">Agression</label>
-                            <input type="radio" id="concentration" name="preffered-attribute" />
+                            <input type="radio" id="aggression" name="preferred-attribute" />
+                            <label for="aggression">Aggression</label>
+                            <input type="radio" id="concentration" name="preferred-attribute" />
                             <label for="concentration">Concentration</label>
                         </div> <!-- radio-button -->
                     </div> <!-- column -->
@@ -115,5 +159,7 @@
                 </div>
             </div> <!-- triple-column -->
         </div> <!-- horizontal-center -->
+        <script src="../scripts/calculator.js"></script>
+        <script src="../scripts/detail.js"></script>
     </body>
 </html>
