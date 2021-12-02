@@ -1,71 +1,90 @@
 <?php
+include './logic.php';
 
-function calculate()
-{
+header('Content-Type: text/event-stream');
+// recommended to prevent caching of event data.
+header('Cache-Control: no-cache');
 
-    $config_count = rand(3, 20);
+function send_message($id, $message, $progress) {
+    $d = array('message' => $message , 'progress' => $progress);
 
-    for ($i = 0; $i < $config_count; $i++) {
-        $config = array(
-            "total" => rand(5, 1000),
-            "car" => randomCar(),
-            "driver" => randomDriver(),
-            "speed" => rand(0, 500),
-            "acceleration" => rand(0, 100),
-            "grip" => rand(0, 100),
-            "stamina" => rand(0, 100),
-            "agression" => rand(0, 100),
-            "concentration" => rand(0, 100),
-        );
-        $config_array[] = $config;
-    }
+    echo "id: $id" . PHP_EOL;
+    echo "data: " . json_encode($d) . PHP_EOL;
+    echo PHP_EOL;
 
-    return $config_array;
+    ob_flush();
+    flush();
 }
 
-function randomDriver()
-{
-    $random_driver_number = rand(0, 8);
-
-    switch ($random_driver_number) {
-        case 0:
-            return "Max Verstappen";
-        case 1:
-            return "Lewis Hamilton";
-        case 2:
-            return "Valterri Bottas";
-        case 3:
-            return "Sergio Perez";
-        case 4:
-            return "Lando Norris";
-        case 5:
-            return "Charles Leclerc";
-        case 6:
-            return "Carlos Sainz";
-        case 7:
-            return "Daniel Ricciardo";
-        case 8:
-            return "Pierre Gasly";
-        default:
-            return "Max Verstappen";     
+# it's a monster, but it's the most efficient way to calculate the setup
+function calculateSetup($parts, $tier, $preferredStat) {
+    $possibleSetupsCount = 1;
+    for ($i = 0; $i < Part::Count; $i++) {
+        $possibleSetupsCount *= count($parts[$i]);
+    }
+    $progress = 0;
+    $oldProgress = 0;
+    $setupId = array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    $bestSetup = setupStats($setupId, $parts);
+    for (; $setupId[0] < count($parts[0]); $setupId[0]++){
+        for (; $setupId[1] < count($parts[1]); $setupId[1]++) {
+            for (; $setupId[2] < count($parts[2]); $setupId[2]++) {
+                for (; $setupId[3] < count($parts[3]); $setupId[3]++) {
+                    for (; $setupId[4] < count($parts[4]); $setupId[4]++) {
+                        for (; $setupId[5] < count($parts[5]); $setupId[5]++) {
+                            for (; $setupId[6] < count($parts[6]); $setupId[6]++) {
+                                for (; $setupId[7] < count($parts[7]); $setupId[7]++) {
+                                    for (; $setupId[8] < count($parts[8]); $setupId[8]++) {
+                                        for (; $setupId[9] < count($parts[9]); $setupId[9]++) {
+                                            for (; $setupId[10] < count($parts[10]); $setupId[10]++) {
+                                                for (; $setupId[11] < count($parts[11]); $setupId[11]++) {
+                                                    for (; $setupId[12] < count($parts[12]); $setupId[12]++) {
+                                                        for (; $setupId[13] < count($parts[13]); $setupId[13]++) {
+                                                            for (; $setupId[14] < count($parts[14]); $setupId[14]++) {
+                                                                $progress++;
+                                                                if ($progress / $possibleSetupsCount > $oldProgress + 0.01) {
+                                                                    $oldProgress = $progress / $possibleSetupsCount;
+                                                                    send_message($setupId, null, $oldProgress);
+                                                                }
+                                                                $setupStats = setupStats($setupId, $parts);
+                                                                if ($setupStats[0] > $tier)
+                                                                    continue;
+                                                                if (($setupStats[$preferredStat] > $bestSetup[$preferredStat]) ||
+                                                                    (($setupStats[$preferredStat] == $bestSetup[$preferredStat]) && ($setupStats[0] >= $bestSetup[0]))) {
+                                                                    $bestSetup = $setupStats;
+                                                                    send_message($setupId, $bestSetup, $oldProgress);
+                                                                }
+                                                            }
+                                                            $setupId[14] = 0;
+                                                        }
+                                                        $setupId[13] = 0;
+                                                    }
+                                                    $setupId[12] = 0;
+                                                }
+                                                $setupId[11] = 0;
+                                            }
+                                            $setupId[10] = 0;
+                                        }
+                                        $setupId[9] = 0;
+                                    }
+                                    $setupId[8] = 0;
+                                }
+                                $setupId[7] = 0;
+                            }
+                            $setupId[6] = 0;
+                        }
+                        $setupId[5] = 0;
+                    }
+                    $setupId[4] = 0;
+                }
+                $setupId[3] = 0;
+            }
+            $setupId[2] = 0;
+        }
+        $setupId[1] = 0;
     }
 }
 
-function randomCar()
-{
-    $random_driver_number = rand(0, 3);
+calculateSetup(loadParts('../data/parts'), Tier::C, Stats::Speed);
 
-    switch ($random_driver_number) {
-        case 0:
-            return "Big car";
-        case 1:
-            return "Small car";
-        case 2:
-            return "Mediocre car";
-        case 3:
-            return "Trash can";
-        default:
-            return "IDK";     
-    }
-}
-
+send_message('CLOSE', 'Process complete', 1);

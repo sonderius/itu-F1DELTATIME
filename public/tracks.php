@@ -8,9 +8,9 @@
     <body>
         <div class="horizontal-center">
             
-            <a href="/calculator.php" class="tab-button">Calculator</a>
-            <a href="/setups.php" class="tab-button">My Setups</a>
-            <a href="/tracks.php" class="tab-button" id="active-tab">Tracks</a>
+            <a href="./calculator.php" class="tab-button">Calculator</a>
+            <a href="./setups.php" class="tab-button">My Setups</a>
+            <a href="./tracks.php" class="tab-button" id="active-tab">Tracks</a>
         
         </div> <!-- horizontal-center -->
     </body>

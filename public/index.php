@@ -8,7 +8,7 @@
 
     <body>  
         <?php
-            header("Location: /calculator.php");
+            header("Location: ./calculator.php");
         exit;
         ?>
     </body>
