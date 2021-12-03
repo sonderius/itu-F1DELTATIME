@@ -31,17 +31,17 @@
 
             </div>
             <div class="col-md-6 text-right">
-                <button class="tab-button" onclick="changePage('calculator')">Calculator</button>
+                <button id="button-page-calculator" class="tab-button" onclick="changePage('calculator')"><b>Calculator</b></button>
             </div>
         </div>
 
         <div class="col-md-2 text-center">
-            <button class="tab-button" onclick="changePage('setup')">My setups</button>
+            <button id="button-page-setup" class="tab-button" onclick="changePage('setup')"><b>My setups</b></button>
         </div>
 
         <div class="col-md-5 text-left">
             <div class="col-md-6 text-left">
-                <button class="tab-button" onclick="changePage('track')">Tracks</button>
+                <button id="button-page-track" class="tab-button" onclick="changePage('track')"><b>Tracks</b></button>
             </div>
 
             <div class="col-md-6 text-right">

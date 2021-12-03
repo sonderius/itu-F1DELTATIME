@@ -150,7 +150,8 @@
         <div class="row justify-content-md-center">
             <div class="col-md-12">
                 <div class="myBarGray">
-                    <div id="myBar">0%</div>
+                    <b><span id="myBarValue">Choose your configuration and press calculate to get best possible setups</span></b>
+                    <div id="myBar"></div>
                 </div>
             </div>
         </div>
@@ -170,7 +171,7 @@
                 <th>Stamina</th>
                 <th>Aggression</th>
                 <th>Concentration</th>
-                <th>???</th>
+                <th>Details/Save</th>
             </tr>
         </table>
     </div>
