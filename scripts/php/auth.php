@@ -15,9 +15,6 @@ if(isset($_POST['login']))
     login($_POST['username'], $_POST['password']);
 }
 
-
-
-
 header('Location: /');
 exit();
 
@@ -47,7 +44,6 @@ function register($username, $password, $pfp)
 {
     $file = new SplFileObject('../../data/user/credentials.csv', 'a');
     $file->fputcsv(array($username, $password, $pfp));
-    $file = null;
     login($username, $password);
 }
 
@@ -73,9 +69,4 @@ function login($username, $password)
             }
         }
     }
-}
-
-function logout()
-{
-    session_destroy();
 }

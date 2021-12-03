@@ -124,6 +124,6 @@ switch ($_GET['attribute']) {
         break;
 }
 
-calculateSetup(loadParts('../data/' . $_GET['season'] . '/parts.csv'), $tier, $stat);
+calculateSetup(loadParts('../../data/' . $_GET['season'] . '/parts.csv'), $tier, $stat);
 
 send_message('CLOSE', 'Process complete', null, 1);

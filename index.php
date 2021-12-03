@@ -15,6 +15,8 @@
         <?php
             session_start();
             
+            include "scripts/php/standalone.php";
+
             include "views/header.php";
             include "views/calculator.php";
             include "views/setup.php";
@@ -22,6 +24,7 @@
             include "views/modal.php";
             include "views/login.php";
             include "views/register.php";
+
         ?>
 
     </body>
@@ -32,7 +35,6 @@
 <script src="scripts/js/detail.js"></script>
 
 <script>
-
 function changePage(page)
 {
     switch(page)
@@ -53,5 +55,11 @@ function changePage(page)
             document.getElementById("track").style.display = "block";
             break;
     }
+}
+
+function jsLogout()
+{
+    var placeholder = document.getElementById("logout-placeholder");
+    placeholder.innerHTML = "<?php logout(); ?>";
 }
 </script>

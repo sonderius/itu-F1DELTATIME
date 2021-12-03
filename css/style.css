@@ -20,7 +20,7 @@ html {
     display: none;
 }
 
-#myBarValue {
+#myBar {
     width:0%; background-color: green;
     border-radius: 25px;
     text-align: center;
@@ -280,7 +280,7 @@ p img {
     padding: 3px;
 }
 
-.pfp-select img {
+.pfp-select {
     border-radius: 50%;
     width: 68px;
     padding: 3px;

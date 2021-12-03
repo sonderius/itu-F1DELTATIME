@@ -20,7 +20,7 @@ function showDetail(button) {
         for (var i = 0; i < summaryCells.length; i++)
             summaryCells[i].innerHTML = summary[i];
     }
-    xmlhttp.open("GET", "../scripts/setupInfo.php?setupId=" + button.parentElement.id + "&season=" + getSelectedRadioButton("season"));
+    xmlhttp.open("GET", "../scripts/php/setupInfo.php?setupId=" + button.parentElement.id + "&season=" + getSelectedRadioButton("season"));
     xmlhttp.send();
 }
 
@@ -29,7 +29,7 @@ function save(button) {
     xmlhttp.onload = function() {
         alert('Saved')
     }
-    xmlhttp.open("GET", "../scripts/saveSetup.php?setupId=" + button.parentElement.id + "&season=" + getSelectedRadioButton("season"));
+    xmlhttp.open("GET", "../scripts/php/saveSetup.php?setupId=" + button.parentElement.id + "&season=" + getSelectedRadioButton("season"));
     xmlhttp.send();
 }
 

@@ -10,7 +10,7 @@ function getSelectedRadioButton(name) {
 }
 
 function startCalculating() {
-    es = new EventSource('../scripts/calculate.php?season=' + getSelectedRadioButton("season") + '&tier=' + getSelectedRadioButton("tier") + '&tyre=' + getSelectedRadioButton("tyres")
+    es = new EventSource('../scripts/php/calculate.php?season=' + getSelectedRadioButton("season") + '&tier=' + getSelectedRadioButton("tier") + '&tyre=' + getSelectedRadioButton("tyres")
         + '&attribute=' + getSelectedRadioButton("preferred-attribute"));
 
     //a message is received

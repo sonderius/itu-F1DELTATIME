@@ -2,15 +2,8 @@ var login_window = document.getElementById("login_window");
 
 var login_window_button = document.getElementById("login_window_button");
 
-var logout_button = document.getElementById("logout_button");
-
 var login_window_close = document.getElementsByClassName("login_window_close")[0];
 
-
-logout_button.onclick = function() {
-    document.getElementsByClassName("logged_in").style.display = "none";
-    document.getElementsByClassName("logged_out").style.display = "block";
-}
 
 login_window_button.onclick = function() {
   login_window.style.display = "block";
