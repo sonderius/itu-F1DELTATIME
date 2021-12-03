@@ -40,3 +40,19 @@ register_window.onclick = function(event) {
     register_window.style.display = "none";
   }
 }
+
+
+//Event handler
+$('#login_submit').click(function(){
+    e.preventDefault();
+    $.ajax({
+        type: 'post',
+        url: 'scripts/php/auth.php',
+        data: $('form').serialize(),
+        success: function () {
+            alert('form was submitted');
+        }
+    });
+
+
+});

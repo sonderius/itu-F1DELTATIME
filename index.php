@@ -13,21 +13,24 @@
     <body>  
 
         <?php
-            include "php/header.php";
-            include "php/calculator.php";
-            include "php/setup.php";
-            include "php/track.php";
-            include "php/modal.php";
-            include "php/login.php";
-            include "php/register.php";
+            session_start();
+            
+
+            include "views/header.php";
+            include "views/calculator.php";
+            include "views/setup.php";
+            include "views/track.php";
+            include "views/modal.php";
+            include "views/login.php";
+            include "views/register.php";
         ?>
 
     </body>
 </html>
 
-<script src="scripts/login.js"></script>
-<script src="scripts/calculator.js"></script>
-<script src="scripts/detail.js"></script>
+<script src="scripts/js/auth.js"></script>
+<script src="scripts/js/calculator.js"></script>
+<script src="scripts/js/detail.js"></script>
 
 <script>
 

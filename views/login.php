@@ -5,14 +5,14 @@
             <span class="login_window_close">&times;</span>
         </div>
 
-        <form onsubmit="login()">
+        <form action="scripts/php/auth.php" method="POST">
 
         <div class="row">
             <div class="col-md-6 text-right">
                 <b>Username</b>
             </div>
             <div class="col-md-6 text-left">
-                <input type="text" />
+                <input type="text" name="username" required />
             </div>
         </div>
 
@@ -21,7 +21,7 @@
                 <b>Password</b>
             </div>
             <div class="col-md-6 text-left">
-                <input type="password" />
+                <input type="password" name="password" required />
             </div>
         </div>
 
@@ -30,7 +30,7 @@
                 <a id="register_window_button" >Not a member? Register here</a>
             </div>
             <div class="col-md-6 text-left">
-                <input type="submit" value="Login">
+                <input type="submit" id="login_submit" value="Login">
             </div>
         </div>
 
