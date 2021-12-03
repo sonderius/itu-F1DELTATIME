@@ -1,0 +1,2 @@
+Pokud někdo rozumíte, jak funguje session, tak můžete spravit logout
+Při session_destroy() by se měl session zahodit, i tím se i odhlísit, každopádně když se to provede v logout funcki(standalone.php) tak to nic neudělá

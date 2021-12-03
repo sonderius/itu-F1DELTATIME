@@ -36,7 +36,7 @@
         </div>
 
         <div class="col-md-2 text-center">
-            <button id="button-page-setup" class="tab-button" onclick="changePage('setup')"><b>My setups</b></button>
+            <button id="button-page-setup" class="tab-button" onclick="changePage('setup')"><b>My Setups</b></button>
         </div>
 
         <div class="col-md-5 text-left">
