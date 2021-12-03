@@ -1,15 +1,8 @@
 <?php
 function logout()
 {   
-    if(session_status() == PHP_SESSION_ACTIVE)
-    {
-        session_destroy();
-    }
-
-    if(session_status() == PHP_SESSION_ACTIVE)
-    {
-        echo "Failed to destroy session";
-    }
-
-    echo $_SESSION['username']; // ???
+    // session_destroy() ani nic podobneho tu proste nejede
+    $_SESSION['username'] = "LOGGED_OUT_USER";
+    $_SESSION['password'] = 0;
+    $_SESSION['path_to_pfp'] = 0;
 }

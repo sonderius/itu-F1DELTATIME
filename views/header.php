@@ -6,11 +6,20 @@
                 <?php
                 if(isset($_SESSION['username']))
                 {
+                    // Workaround, kvuli nefungujicimu session_destroy();
+                    if(strcmp($_SESSION['username'], "LOGGED_OUT_USER") == 0)
+                    {
+                        echo "<img class='pfp-select' src='images/pfp/pfp_0.png'>";
+                        echo "Not logged in";
+                    }
+                    else
+                    {
                     echo "<img class='pfp-select' src='";
                     echo $_SESSION['path_to_pfp'];
                     echo "'>";
                     echo "Logged in as ";
                     echo $_SESSION['username'];
+                    }
                 }
                 else
                 {
@@ -42,11 +51,19 @@
                 }
                 else
                 {
-                    echo '<button type="button" onclick="';
-                    echo 'jsLogout()';
-                    echo '" class="tab-button">Logout</button>';
-                    echo "<div id=login_window_button style='display:none'></div>";
-                    echo "<div id='logout-placeholder'></div>";
+                    // Workaround, kvuli nefungujicimu session_destroy();
+                    if(strcmp($_SESSION['username'], "LOGGED_OUT_USER") == 0)
+                    {
+                        echo '<button class="tab-button" id="login_window_button">Login</button>';
+                    }
+                    else
+                    {
+                        echo '<button type="button" onclick="';
+                        echo 'jsLogout()';
+                        echo '" class="tab-button">Logout</button>';
+                        echo "<div id=login_window_button style='display:none'></div>";
+                        echo "<div id='logout-placeholder'></div>";
+                    }
                 }     
 
                 ?>
