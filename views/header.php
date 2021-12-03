@@ -9,22 +9,23 @@
                     // Workaround, kvuli nefungujicimu session_destroy();
                     if(strcmp($_SESSION['username'], "LOGGED_OUT_USER") == 0)
                     {
-                        echo "<img class='pfp-select' src='images/pfp/pfp_0.png'>";
-                        echo "Not logged in";
+                        echo "<img class='pfp-select-img' src='images/pfp/pfp_0.png'>";
+                        echo "<div class='white'>Not logged in</div>";
                     }
                     else
                     {
-                    echo "<img class='pfp-select' src='";
+                    echo "<img class='pfp-select-img' src='";
                     echo $_SESSION['path_to_pfp'];
                     echo "'>";
-                    echo "Logged in as ";
+                    echo "<div class='white'>Logged in as <b>";
                     echo $_SESSION['username'];
+                    echo "</b></div>";
                     }
                 }
                 else
                 {
-                    echo "<img class='pfp-select' src='images/pfp/pfp_0.png'>";
-                    echo "Not logged in";
+                    echo "<img class='pfp-select-img' src='images/pfp/pfp_0.png'>";
+                    echo "<div class='white'>Not logged in</div>";
                 }          
                ?>
 

@@ -5,11 +5,23 @@ html {
 }
 
 #header {
-    background-color: rgb(50, 150, 200);
+  background-image: url('../images/background/background_1.png');
+  width: 100%;
+  background-attachment: fixed;
+}
+
+.white {
+    padding-left: 10px;
+    display: inline;
+    color: white;
+    font-size: 16px;
+    vertical-align: middle;
 }
 
 #calculator {
     display: block;
+    background-color: rgb(26, 26, 26);
+
 }
 
 #setup {
@@ -21,35 +33,40 @@ html {
 }
 
 #myBar {
-    width:0%; background-color: green;
+    width:0%;
+    background-color: red;
     border-radius: 25px;
     text-align: center;
+    color:white;
 }
+
+
 
 .myBarGray {
     width:100%;
     background-color: gray;
     border-radius: 25px;
+    margin: 10px;
 }
 
 .tab-button {
     transition-duration: 0.5s;
-    background-color: white;
-    border: 1px solid black;
-    color: black;
+    background-color: red;
     padding: 8px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
+    color: white;
     font-size: 24px;
     margin: 8px;
     cursor: pointer;
     width: 200px;
+    border-radius: 10px;
 }
 
 .tab-button:hover {
-    background-color: gray;
-    color: white;
+    background-color: white;
+    color: red;
   }
 
 .horizontal-center {
@@ -80,6 +97,7 @@ html {
     text-align: center;
     text-decoration: none;
     display: inline-block;
+    color: white;
     font-size: 24px;
     margin: 8px;
     width: 300px;
@@ -94,6 +112,8 @@ html {
     transition-duration: 0.3s;
     width: 80%;
     margin-left: 8%; /* 10% out of 80% = 8% */
+    border-radius: 20px;
+    background-color: red;
 }
   
 /* Hide classic radio "check circle" */
@@ -103,7 +123,11 @@ html {
 }
   
 .radio-button input[type="radio"]:checked+label, .Checked+label {
-    background: gray;
+    background: green;
+}
+
+#calculator h1, #calculator h2 {
+    color: white;
 }
   
 .radio-button label {
@@ -114,7 +138,8 @@ html {
 }
  
 .radio-button label:hover {
-    background: #DDD;
+    background: white;
+    color: red;
 }
   
 #submit-button:hover {
@@ -247,10 +272,14 @@ p img {
 /* Modal Content/Box */
 .login_window-content {
     background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
+    margin: 5% auto; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
     width: 25%; /* Could be more or less, depending on screen size */
+}
+
+.login_window-content .row{
+    margin-top: 20px;
 }
   
   /* The Close Button */
@@ -259,8 +288,8 @@ p img {
 .register_window_close {
     color: #aaa;
     float: right;
-    font-size: 28px;
     font-weight: bold;
+    height: 10px;
 }
   
 .close:hover,
@@ -272,6 +301,7 @@ p img {
     color: black;
     text-decoration: none;
     cursor: pointer;
+    height: 10px;
 }
 
 #logged_in img {
@@ -280,7 +310,7 @@ p img {
     padding: 3px;
 }
 
-.pfp-select {
+.pfp-select-img {
     border-radius: 50%;
     width: 68px;
     padding: 3px;

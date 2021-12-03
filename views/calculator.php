@@ -1,4 +1,5 @@
 <div id="calculator">
+    <div id="calculator-bg">
     <div class="row">
         <div class="col-md-12 text-center">
             <h1>Season</h1>
@@ -153,6 +154,8 @@
                 </div>
             </div>
         </div>
+    </div>
+
     </div>
 
     <div>

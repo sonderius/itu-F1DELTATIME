@@ -2,7 +2,15 @@
     <div class="login_window-content">
 
         <div class="row">
-            <span class="login_window_close">&times;</span>
+            <div class="col-md-2 text-center">
+ 
+            </div>
+            <div class="col-md-8 text-center">
+                <h4><b>Login into your account</b></h4>
+            </div>
+            <div class="col-md-2 text-right">
+                <span class="login_window_close">X</span>
+            </div>
         </div>
 
         <form action="scripts/php/auth.php" method="POST">
