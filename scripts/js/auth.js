@@ -2,8 +2,15 @@ var login_window = document.getElementById("login_window");
 
 var login_window_button = document.getElementById("login_window_button");
 
+var logout_button = document.getElementById("logout_button");
+
 var login_window_close = document.getElementsByClassName("login_window_close")[0];
 
+
+logout_button.onclick = function() {
+    document.getElementsByClassName("logged_in").style.display = "none";
+    document.getElementsByClassName("logged_out").style.display = "block";
+}
 
 login_window_button.onclick = function() {
   login_window.style.display = "block";
@@ -40,19 +47,3 @@ register_window.onclick = function(event) {
     register_window.style.display = "none";
   }
 }
-
-
-//Event handler
-$('#login_submit').click(function(){
-    e.preventDefault();
-    $.ajax({
-        type: 'post',
-        url: 'scripts/php/auth.php',
-        data: $('form').serialize(),
-        success: function () {
-            alert('form was submitted');
-        }
-    });
-
-
-});

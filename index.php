@@ -15,7 +15,6 @@
         <?php
             session_start();
             
-
             include "views/header.php";
             include "views/calculator.php";
             include "views/setup.php";

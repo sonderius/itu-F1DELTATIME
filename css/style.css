@@ -273,3 +273,31 @@ p img {
     text-decoration: none;
     cursor: pointer;
 }
+
+#logged_in img {
+    border-radius: 50%;
+    width: 68px;
+    padding: 3px;
+}
+
+.pfp-select img {
+    border-radius: 50%;
+    width: 68px;
+    padding: 3px;
+}
+
+#logged_in {
+    display: none;
+}
+
+#logged_out {
+    display: block;
+}
+
+.pfp-select input[type="radio"] {
+    display: none;
+}
+
+.pfp-select input[type="radio"]:checked + label {
+    border: 1px solid red;
+}

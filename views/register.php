@@ -5,14 +5,16 @@
             <span class="register_window_close">&times;</span>
         </div>
 
-        <form onsubmit="register()">
+        <form action="scripts/php/auth.php" method="POST">
+
+        <input type="hidden" name="register" value="1">
 
         <div class="row">
             <div class="col-md-6 text-right">
                 <b>Username</b>
             </div>
             <div class="col-md-6 text-left">
-                <input type="text" />
+                <input type="text" name="username" />
             </div>
         </div>
 
@@ -21,16 +23,41 @@
                 <b>Password</b>
             </div>
             <div class="col-md-6 text-left">
-                <input type="password" />
+                <input type="password" name="password"/>
             </div>
         </div>
 
         <div class="row">
-            <div class="col-md-6 text-right">
-                <b>Repeat password</b>
+            <div class="col-md-12 text-right">
+                <b>Vyberte si obrázek profilu</b>
             </div>
-            <div class="col-md-6 text-left">
-                <input type="password" />
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="pfp-select">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input type="radio" name="pfp" value="1" id="pfp_1" />
+                            <label for="pfp_1"><img src="images/pfp/pfp_1.png"></label>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="radio" name="pfp" value="2" id="pfp_2" />
+                            <label for="pfp_2"><img src="images/pfp/pfp_2.png"></label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input type="radio" name="pfp" value="3" id="pfp_3" />
+                            <label for="pfp_3"><img src="images/pfp/pfp_3.png"></label>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="radio" name="pfp" value="4" id="pfp_4" />
+                            <label for="pfp_4"><img src="images/pfp/pfp_4.png"></label>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 

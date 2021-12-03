@@ -7,6 +7,8 @@
 
         <form action="scripts/php/auth.php" method="POST">
 
+        <input type="hidden" name="login" value="1">
+
         <div class="row">
             <div class="col-md-6 text-right">
                 <b>Username</b>
@@ -30,7 +32,7 @@
                 <a id="register_window_button" >Not a member? Register here</a>
             </div>
             <div class="col-md-6 text-left">
-                <input type="submit" id="login_submit" value="Login">
+                <input type="submit" value="Login">
             </div>
         </div>
 
