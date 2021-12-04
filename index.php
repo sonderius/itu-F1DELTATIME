@@ -37,3 +37,4 @@
 <script src="scripts/js/calculator.js"></script>
 <script src="scripts/js/detail.js"></script>
 <script src="scripts/js/standalone.js"></script>
+<script src="scripts/js/setups.js"></script>

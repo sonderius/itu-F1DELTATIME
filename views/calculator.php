@@ -1,4 +1,4 @@
-<div id="calculator">
+<div style="width: 80%; margin: auto" id="calculator">
     <div id="calculator-bg">
     <div class="row">
         <div class="col-md-12 text-center">
