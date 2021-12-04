@@ -235,12 +235,26 @@ table button {
     color: white;
 }
 
+/* The Close Button */
+.close span {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: auto auto auto auto auto auto;
     padding: 10px;
 }
-
 .grid-item {
     padding: 20px;
     font-size: 30px;
@@ -255,7 +269,11 @@ p img {
     height: 1.5em;
     width: auto;
 }
-
+/*
+.invert{
+    filter: invert(100%);
+}
+*/
 .login_window {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -280,6 +298,21 @@ p img {
     color: white;
 }
 
+.login_window-content .row{
+    margin-top: 20px;
+}
+  
+  /* The Close Button */
+.close,
+.login_window_close,
+.register_window_close {
+    color: red;
+    float: right;
+    font-weight: bold;
+    height: 10px;
+    font-size: 28px;
+}
+
 .button-to-login {
     transition-duration: 0.5s;
     background-color: red;
@@ -295,22 +328,6 @@ p img {
 height: 30px;
 }
 
-.login_window-content .row{
-    margin-top: 20px;
-}
-  
-  /* The Close Button */
-.close,
-.login_window_close,
-.register_window_close {
-    color: red;
-    float: right;
-    font-weight: bold;
-    height: 10px;
-
-    font-size: 28px;
-}
-  
 .close:hover,
 .close:focus,
 .login_window_close:hover,
@@ -321,6 +338,14 @@ height: 30px;
     text-decoration: none;
     cursor: pointer;
     height: 10px;
+}
+
+#show-setup-table-2019 {
+    display: none;
+}
+
+#show-setup-table-2020 {
+    display: none;
 }
 
 #logged_in img {
@@ -351,26 +376,30 @@ height: 30px;
     border: 1px solid red;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+s
+/* Track */
+::-webkit-scrollbar-track {
+  background: #252525;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: red;
+}
+
 #show-setup-table-2019 {
     display: none;
 }
 
 #show-setup-table-2020 {
     display: none;
-}
-
-::-webkit-scrollbar {
-  width: 10px;
-}
-s
-::-webkit-scrollbar-track {
-  background: #252525;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #888;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: red;
 }
