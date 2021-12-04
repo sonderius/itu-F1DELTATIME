@@ -353,3 +353,11 @@ s
 ::-webkit-scrollbar-thumb:hover {
   background: red;
 }
+
+#show-setup-table-2019 {
+    display: none;
+}
+
+#show-setup-table-2020 {
+    display: none;
+}
