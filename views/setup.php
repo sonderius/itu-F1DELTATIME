@@ -45,9 +45,10 @@
     <div id="show-setup-table-2019">
         <div style="height: 300px; overflow: auto;">
             <table>
-            <?php
-                $setupId = loadSetups('data/2019/setups/xxx.csv');
-                $parts = loadParts('data/2019/parts.csv');
+            <?php 
+                // Relative path from logic.php file
+                $setupId = loadSetups('./data/2019/setups/xxx.csv');
+                $parts = loadParts('./data/2019/parts.csv');
 
                 for($i = 0; isset($setupId[$i]); $i++)
                 {
@@ -74,8 +75,9 @@
         <div style="height: 300px; overflow: auto;">
             <table>
             <?php
-                $setupId = loadSetups('data/2020/setups/xxx.csv');
-                $parts = loadParts('data/2020/parts.csv');
+                // Relative path from logic.php file
+                $setupId = loadSetups('./data/2020/setups/xxx.csv');
+                $parts = loadParts('./data/2020/parts.csv');
     
                 for($i = 0; isset($setupId[$i]); $i++)
                 {

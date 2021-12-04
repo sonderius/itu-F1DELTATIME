@@ -10,6 +10,8 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
         <title>F1 Delta Time</title>
+
+        <script src="scripts/js/calculator.js"></script>
     </head>
 
     <body>
@@ -41,7 +43,6 @@
     </body>
 </html>
 
-<script src="scripts/js/auth.js"></script>
-<script src="scripts/js/calculator.js"></script>
-<script src="scripts/js/detail.js"></script>
-<script src="scripts/js/standalone.js"></script>
+        <script src="scripts/js/auth.js"></script>
+        <script src="scripts/js/detail.js"></script>
+        <script src="scripts/js/standalone.js"></script>

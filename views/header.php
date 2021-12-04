@@ -59,14 +59,11 @@
                     }
                     else
                     {
-                          echo '<form method="post">
-                <input type="hidden" name="logout" value="true">';
-                        echo '<button type="submit" onclick="';
-                       echo 'jsLogout()';
+                        echo '<button type="button" onclick="';
+                        echo 'jsLogout()';
                         echo '" class="tab-button">Logout</button>';
-                        echo "<div id=login_window_button style='display:none'></div>";
+                        echo '<div id="login_window_button"></div>';
                         echo "<div id='logout-placeholder'></div>";
-                           echo '</form>';
                     }
                 }
 
