@@ -75,7 +75,7 @@
         <div style="height: 300px; overflow: auto;">
             <table>
             <?php
-                // Relative path from logic.php file
+                
                 $setupId = loadSetups('./data/2020/setups/xxx.csv');
                 $parts = loadParts('./data/2020/parts.csv');
 

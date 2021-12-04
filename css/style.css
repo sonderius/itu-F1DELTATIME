@@ -111,7 +111,8 @@ span {
     width: 300px;
 }
   
-.radio-button label, .radio-button input {
+.radio-button label,
+.radio-button input {
     display: block;
     top: 0;
     left: 0;
@@ -130,13 +131,23 @@ span {
     z-index: 100;
 }
   
-.radio-button input[type="radio"]:checked+label, .Checked+label {
+.radio-button input[type="radio"]:checked+label,
+.Checked+label {
     background: rgb(100, 0, 30);
 }
 
-#calculator h1, #calculator h2, #calculator h3, #calculator h4,
-#setup h1, #setup h2, #setup h3, #setup h4,
-#track h1, #track h2, #track h3, #track h4 {
+#calculator h1,
+#calculator h2,
+#calculator h3,
+#calculator h4,
+#setup h1,
+#setup h2,
+#setup h3,
+#setup h4,
+#track h1,
+#track h2,
+#track h3,
+#track h4 {
     color: white;
 }
   
@@ -161,7 +172,8 @@ span {
     display: inline-block;
 }
 
-.season-button label, .season-button input {
+.season-button label,
+.season-button input {
     top: 0;
     left: 0;
     right: 0;
@@ -220,22 +232,7 @@ table button {
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
-color: white;
-}
-
-/* The Close Button */
-.close span {
     color: white;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: red;
-    text-decoration: none;
-    cursor: pointer;
 }
 
 .grid-container {
@@ -243,6 +240,7 @@ color: white;
     grid-template-columns: auto auto auto auto auto auto;
     padding: 10px;
 }
+
 .grid-item {
     padding: 20px;
     font-size: 30px;
@@ -257,11 +255,7 @@ p img {
     height: 1.5em;
     width: auto;
 }
-/*
-.invert{
-    filter: invert(100%);
-}
-*/
+
 .login_window {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -278,11 +272,12 @@ p img {
   
 /* Modal Content/Box */
 .login_window-content {
-    background-color: #fefefe;
+    background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='100%25' width='100%25'%3E%3Cdefs%3E%3Cpattern id='doodad' width='29' height='29' viewBox='0 0 40 40' patternUnits='userSpaceOnUse' patternTransform='rotate(135)'%3E%3Crect width='100%25' height='100%25' fill='rgba(26, 29, 46,1)'/%3E%3Cpath d='M-10 30h60v4h-60zM-10-10h60v4h-60' fill='rgba(107, 30, 42,0.41)'/%3E%3Cpath d='M-10 18h60v4h-60zM-10-22h60v4h-60z' fill='rgba(60, 54, 107,0.25)'/%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23doodad)' height='200%25' width='200%25'/%3E%3C/svg%3E ");
     margin: 5% auto; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
     width: 25%; /* Could be more or less, depending on screen size */
+    color: white;
 }
 
 .login_window-content .row{
@@ -293,10 +288,12 @@ p img {
 .close,
 .login_window_close,
 .register_window_close {
-    color: white;
+    color: red;
     float: right;
     font-weight: bold;
     height: 10px;
+
+    font-size: 28px;
 }
   
 .close:hover,
@@ -305,7 +302,7 @@ p img {
 .login_window_close:focus,
 .register_window_close:hover,
 .register_window_close:focus  {
-    color: red;
+    color: white;
     text-decoration: none;
     cursor: pointer;
     height: 10px;
@@ -339,30 +336,26 @@ p img {
     border: 1px solid red;
 }
 
-/* width */
-::-webkit-scrollbar {
-  width: 10px;
-}
-s
-/* Track */
-::-webkit-scrollbar-track {
-  background: #252525;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #888;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: red;
-}
-
 #show-setup-table-2019 {
     display: none;
 }
 
 #show-setup-table-2020 {
     display: none;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+s
+::-webkit-scrollbar-track {
+  background: #252525;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: red;
 }
