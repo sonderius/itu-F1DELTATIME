@@ -28,9 +28,20 @@ function changePage(page)
             break;
     }
 }
-
 function jsLogout()
 {
-    var placeholder = document.getElementById("logout-placeholder");
-    placeholder.innerHTML = "<?php logout(); ?>";
+    console.log('odhlasujem');
 }
+
+function show2019() 
+{
+    document.getElementById("show-setup-table-2020").style.display = "none";
+    document.getElementById("show-setup-table-2019").style.display = "block";
+}
+
+function show2020() 
+{
+    document.getElementById("show-setup-table-2019").style.display = "none";
+    document.getElementById("show-setup-table-2020").style.display = "block";
+}
+

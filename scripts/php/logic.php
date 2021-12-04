@@ -42,17 +42,22 @@ abstract class Tier {
 # returns 3D array, 1st dimension is part type (see Part enum), 2nd dimension are parts of that type, 3rd dimension are part stats
 function loadParts($fileName) {
     $parts = array();
-    for ($i = Part::Turbo; $i < Part::Driver; $i++) {
-        $parts[$i][] = array(0, 0, 0);
-    }
-    for ($i = Part::Gloves; $i < Part::Count; $i++) {
-        $parts[$i][] = array(0, 0, 0);
-    }
-    $file = fopen($fileName, 'r');
-    while (($data = fgetcsv($file, 32)) !== FALSE) {
-        $parts[$data[0]][] = array($data[1], $data[2], $data[3]);
-    }
-    fclose($file);
+    if (file_exists($fileName)) {
+        for ($i = Part::Turbo; $i < Part::Driver; $i++) {
+            $parts[$i][] = array(0, 0, 0);
+        }
+        for ($i = Part::Gloves; $i < Part::Count; $i++) {
+            $parts[$i][] = array(0, 0, 0);
+        }
+        $file = fopen($fileName, 'r');
+        while (($data = fgetcsv($file, 32)) !== FALSE) {
+            $parts[$data[0]][] = array($data[1], $data[2], $data[3]);
+        }
+        fclose($file);
+    }else
+    {
+        echo "BAD PATH TO THE PART FILE";
+    }    
     return $parts;
 }
 
@@ -93,7 +98,10 @@ function loadSetups($fileName) {
         while (($data = fgetcsv($file, 32)) !== FALSE)
             $setups[] = $data;
         fclose($file);
-    }
+    }else
+    {
+        echo "BAD PATH TO THE SETUP FILE";
+    }   
     return $setups;
 }
 

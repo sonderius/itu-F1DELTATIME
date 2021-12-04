@@ -24,7 +24,7 @@
             </div>
         </div>
     </div>
-
+    
     <div>
         <table>
             <tr>
@@ -41,7 +41,7 @@
             </tr>
         </table>
     </div>
-
+    
     <div>
         <table id="saved-table">
         </table>
