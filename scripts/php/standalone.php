@@ -1,13 +1,12 @@
 <?php
+
  function logout()
 {
-    session_destroy();// ani nic podobneho tu proste nejede
-   //unset($_SESSION[$login]);
+    session_destroy();
+
     $_SESSION['username'] = "LOGGED_OUT_USER";
     $_SESSION['password'] = 0;
-   $_SESSION['path_to_pfp'] = 0;
-
-
+    $_SESSION['path_to_pfp'] = 0;
 }
 
 function getPfpPath($username)
@@ -34,6 +33,21 @@ function getPfpPath($username)
 
 function register($username, $password, $pfp)
 {
+    $csv = array_map('str_getcsv', file("../../data/user/credentials.csv"));
+    for($i = 0; isset($csv[$i][0]) ; $i++){
+        if(strcmp($csv[$i][0], $username) == 0)
+        {
+            // Duplicate user
+
+
+            echo '<script type="text/javascript">';
+            echo 'duplicateUser();';
+            echo '</script>';
+
+            return;
+        }
+    }
+
     $file = new SplFileObject('../../data/user/credentials.csv', 'a');
     $file->fputcsv(array($username, $password, $pfp));
     login($username, $password);

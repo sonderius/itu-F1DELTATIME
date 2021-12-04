@@ -22,19 +22,21 @@
             session_start();
 
             include "scripts/php/standalone.php";
-          //  print_r($_POST);
+
             include "scripts/php/logic.php";
+
             if (isset($_POST['logout'])){
-               logout();
-                  header('Location: ' ."" );
+                logout();
+                header('Location: ' . "" );
             }
 
             include "views/header.php";
-         //   echo '<script>console.log('.'"'. var_dump($_POST).'"'.')</script>';
+
             include "views/calculator.php";
             include "views/setup.php";
             include "views/track.php";
             include "views/modal.php";
+            include "views/authIncorrect.php";
             include "views/login.php";
             include "views/register.php";
 

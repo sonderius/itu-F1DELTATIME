@@ -1,15 +1,10 @@
 <div id="register_window" class="login_window" >
     <div class="login_window-content">
+        <span class="register_window_close">X</span>
 
         <div class="row">
-            <div class="col-md-2 text-center">
- 
-            </div>
-            <div class="col-md-8 text-center">
+            <div class="col-md-12 text-center">
                 <h4><b>Register new account</b></h4>
-            </div>
-            <div class="col-md-2 text-right">
-                <span class="register_window_close">X</span>
             </div>
         </div>
 
@@ -41,42 +36,33 @@
             </div>
         </div>
 
-
- 
-                <div class="pfp-select">
-                    <div class="row">
-                        <div class="col-md-6 text-center">
-                            <input type="radio" name="pfp" value="1" id="pfp_1" />
-                            <label for="pfp_1"><img class='pfp-select-img' src="images/pfp/pfp_1.png"></label>
-                        </div>
-                        <div class="col-md-6 text-center">
-                            <input type="radio" name="pfp" value="2" id="pfp_2" />
-                            <label for="pfp_2"><img class='pfp-select-img' src="images/pfp/pfp_2.png"></label>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-6 text-center">
-                            <input type="radio" name="pfp" value="3" id="pfp_3" />
-                            <label for="pfp_3"><img class='pfp-select-img' src="images/pfp/pfp_3.png"></label>
-                        </div>
-                        <div class="col-md-6 text-center">
-                            <input type="radio" name="pfp" value="4" id="pfp_4" />
-                            <label for="pfp_4"><img class='pfp-select-img' src="images/pfp/pfp_4.png"></label>
-                        </div>
-                    </div>
+        <div class="pfp-select">
+            <div class="row">
+                <div class="col-md-6 text-center">
+                    <input type="radio" name="pfp" value="1" id="pfp_1" />
+                    <label for="pfp_1"><img class='pfp-select-img' src="images/pfp/pfp_1.png"></label>
                 </div>
-                
- 
-          
-     
+                <div class="col-md-6 text-center">
+                    <input type="radio" name="pfp" value="2" id="pfp_2" />
+                    <label for="pfp_2"><img class='pfp-select-img' src="images/pfp/pfp_2.png"></label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 text-center">
+                    <input type="radio" name="pfp" value="3" id="pfp_3" />
+                    <label for="pfp_3"><img class='pfp-select-img' src="images/pfp/pfp_3.png"></label>
+                </div>
+                <div class="col-md-6 text-center">
+                    <input type="radio" name="pfp" value="4" id="pfp_4" />
+                    <label for="pfp_4"><img class='pfp-select-img' src="images/pfp/pfp_4.png"></label>
+                </div>
+            </div>
+        </div>
 
         <div class="row">
-            <div class="col-md-2"></div>
-            <div class="col-md-8 text-center">
-                <input type="submit" value="Register">
+            <div class="col-md-12 text-center">
+                <input class="button-to-register" type="submit" value="Register">
             </div>
-            <div class="col-md-2"></div>
         </div>
 
         </form>
