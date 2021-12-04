@@ -24,6 +24,25 @@ function showDetail(button) {
     xmlhttp.send();
 }
 
+// Fake data for details in setup page
+function setupShowDetail(button)
+{
+    modal.style.display = "block";
+    const xmlhttp = new XMLHttpRequest();
+    xmlhttp.onload = function() {
+        var stats = document.getElementById("setupDetail").children;
+        for (var i = 0; i < 20; i += 2)
+            stats[i].innerHTML = '<p><img class="invert" src="./images/stats/speed.svg"> ' + Math.floor(Math.random() * 1000) + '</br><img class="invert" src="./images/stats/acceleration.svg"> ' + Math.floor(Math.random() * 1000) + '</br><img class="invert" src="./images/stats/grip.svg"> ' + Math.floor(Math.random() * 1000) + '</p>';
+        for (var i = 20; i < stats.length; i += 2)
+            stats[i].innerHTML = '<p><img class="invert" src="./images/stats/stamina.svg"> ' + Math.floor(Math.random() * 1000) + '</br><img class="invert" src="./images/stats/aggression.svg"> ' + Math.floor(Math.random() * 1000) + '</br><img class="invert" src="./images/stats/concentration.svg"> ' + Math.floor(Math.random() * 1000) + '</p>';
+        var summaryCells = document.getElementById("detailRow").children;
+        for (var i = 0; i < summaryCells.length; i++)
+            summaryCells[i].innerHTML = Math.floor(Math.random() * 10000);
+    }
+    xmlhttp.open("GET", "./scripts/php/setupInfo.php?setupId=" + button.parentElement.id + "&season=" + getSelectedRadioButton("season"));
+    xmlhttp.send();
+}
+
 function save(button) {
     const xmlhttp = new XMLHttpRequest();
     xmlhttp.onload = function() {

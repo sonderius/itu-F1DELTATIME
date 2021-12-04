@@ -59,7 +59,7 @@
                     }
                     else
                     {
-                        echo '<form method="post">';
+                        echo '<form style="height: 0;" method="post">';
                         echo '<input type="hidden" name="logout" value="true">';
                         echo '<button type="button" onclick="';
                         echo 'jsLogout()';

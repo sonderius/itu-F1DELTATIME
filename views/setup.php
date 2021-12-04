@@ -63,7 +63,7 @@
                     echo "<td>" . $result[6] . "</td>";
                     echo "<td>" . $result[7] . "</td>";
                     echo "<td>" . $result[8] . "</td>"; 
-                    echo "<td>" . "Detailsrow" . "</td>"; 
+                    echo "<td>" . '<i onclick="setupShowDetail(this)" class="fa fa-search" style="padding-right: 20px;">' . "</td>"; 
                     echo "</tr>";
                 }
             ?>
@@ -92,7 +92,7 @@
                     echo "<td>" . $result[6] . "</td>";
                     echo "<td>" . $result[7] . "</td>";
                     echo "<td>" . $result[8] . "</td>"; 
-                    echo "<td>" . "Detailsrow" . "</td>"; 
+                    echo "<td>" . '<i onclick="setupShowDetail(this)" class="fa fa-search" style="padding-right: 20px;">' . "</td>"; 
                     echo "</tr>";
                 }
             ?>
