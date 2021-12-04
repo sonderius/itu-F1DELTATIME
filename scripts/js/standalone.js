@@ -29,6 +29,7 @@ function changePage(page)
     }
 }
 function jsLogout()
+{
     console.log('odhlasujem');
 }
 
