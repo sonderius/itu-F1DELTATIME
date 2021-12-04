@@ -34,6 +34,10 @@ html, body {
     background-color: rgb(100, 0, 30);
 }
 
+span {
+    color: white;
+}
+
 .myBarGray span {
     position: absolute;
     top: 0;
@@ -220,8 +224,8 @@ color: white;
 }
 
 /* The Close Button */
-.close {
-    color: #aaaaaa;
+.close span {
+    color: white;
     float: right;
     font-size: 28px;
     font-weight: bold;
@@ -229,7 +233,7 @@ color: white;
 
 .close:hover,
 .close:focus {
-    color: #000;
+    color: red;
     text-decoration: none;
     cursor: pointer;
 }
@@ -289,7 +293,7 @@ p img {
 .close,
 .login_window_close,
 .register_window_close {
-    color: #aaa;
+    color: white;
     float: right;
     font-weight: bold;
     height: 10px;
@@ -301,7 +305,7 @@ p img {
 .login_window_close:focus,
 .register_window_close:hover,
 .register_window_close:focus  {
-    color: black;
+    color: red;
     text-decoration: none;
     cursor: pointer;
     height: 10px;

@@ -3,7 +3,7 @@ include './logic.php';
 
 $season = $_GET['season'];
 $parts = loadParts('../../data/' . $season . '/parts.csv');
-$setups = loadSetups('../../data/' . $season . '/Setups/xxx.csv');
+$setups = loadSetups('../../data/' . $season . '/setups/xxx.csv');
 
 $result = array();
 

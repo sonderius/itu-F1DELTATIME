@@ -10,7 +10,7 @@
         <div class="col-md-6 text-right">
             <div class="radio-button">
                 <div class="season-button">
-                    <input type="radio" id="setup-2019" name="setup-season" onchange="loadSetups(this.id.substr(6))" required />
+                    <input type="radio" id="setup-2019" name="setup-season" onclick="show2019()" />
                     <label for="setup-2019">2019</label>
                 </div>
             </div>
@@ -18,7 +18,7 @@
         <div class="col-md-6 text-left">
             <div class="radio-button">
                 <div class="season-button">
-                    <input type="radio" id="setup-2020" name="setup-season" onchange="loadSetups(this.id.substr(6))" required />
+                    <input type="radio" id="setup-2020" name="setup-season" onclick="show2020()" />
                     <label for="setup-2020">2020</label>
                 </div>
             </div>
@@ -46,7 +46,7 @@
         <div style="height: 300px; overflow: auto;">
             <table>
             <?php
-                // Relative path from logic.php file
+
                 $setupId = loadSetups('./data/2019/setups/xxx.csv');
                 $parts = loadParts('./data/2019/parts.csv');
 
