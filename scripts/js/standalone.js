@@ -28,7 +28,7 @@ function changePage(page)
             break;
     }
 }
-function jsLogout()
+function jsLogout(){
     console.log('odhlasujem');
 }
 
