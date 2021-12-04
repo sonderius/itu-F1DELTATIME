@@ -28,11 +28,19 @@ function changePage(page)
             break;
     }
 }
-
 function jsLogout()
-{
     console.log('odhlasujem');
-    //var placeholder = document.getElementById("logout-placeholder");
-  //  placeholder.innerHTML = "<script>console.log('<?= var_dump($_SESSION);?>')<script>";
-
 }
+
+function show2019() 
+{
+    document.getElementById("show-setup-table-2020").style.display = "none";
+    document.getElementById("show-setup-table-2019").style.display = "block";
+}
+
+function show2020() 
+{
+    document.getElementById("show-setup-table-2019").style.display = "none";
+    document.getElementById("show-setup-table-2020").style.display = "block";
+}
+
