@@ -31,6 +31,8 @@ function changePage(page)
 
 function jsLogout()
 {
-    var placeholder = document.getElementById("logout-placeholder");
-    placeholder.innerHTML = "<?php logout(); ?>";
+    console.log('odhlasujem');
+    //var placeholder = document.getElementById("logout-placeholder");
+  //  placeholder.innerHTML = "<script>console.log('<?= var_dump($_SESSION);?>')<script>";
+
 }

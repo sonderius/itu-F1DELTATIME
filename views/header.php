@@ -2,7 +2,7 @@
     <div class="row">
         <div class="col-md-5 text-left">
             <div class="col-md-6 text-left">
-            
+
                 <?php
                 if(isset($_SESSION['username']))
                 {
@@ -26,7 +26,7 @@
                 {
                     echo "<img class='pfp-select-img' src='images/pfp/pfp_0.png'>";
                     echo "<div class='white'>Not logged in</div>";
-                }          
+                }
                ?>
 
             </div>
@@ -59,13 +59,16 @@
                     }
                     else
                     {
-                        echo '<button type="button" onclick="';
-                        echo 'jsLogout()';
+                          echo '<form method="post">
+                <input type="hidden" name="logout" value="true">';
+                        echo '<button type="submit" onclick="';
+                       echo 'jsLogout()';
                         echo '" class="tab-button">Logout</button>';
                         echo "<div id=login_window_button style='display:none'></div>";
                         echo "<div id='logout-placeholder'></div>";
+                           echo '</form>';
                     }
-                }     
+                }
 
                 ?>
 
@@ -73,5 +76,3 @@
         </div>
     </div>
 </div>
-
-
