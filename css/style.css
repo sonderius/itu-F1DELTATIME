@@ -280,6 +280,21 @@ p img {
     color: white;
 }
 
+.button-to-login {
+    transition-duration: 0.5s;
+    background-color: red;
+
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100px;
+    border-radius: 10px;
+height: 30px;
+}
+
 .login_window-content .row{
     margin-top: 20px;
 }

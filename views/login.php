@@ -1,5 +1,6 @@
 <div id="login_window" class="login_window" >
     <div class="login_window-content">
+                <span class="login_window_close">&times;</span>
 
         <div class="row">
             <div class="col-md-2 text-center">
@@ -9,7 +10,6 @@
                 <h4><b>Login into your account</b></h4>
             </div>
             <div class="col-md-2 text-right">
-                <span class="login_window_close">&times;</span>
             </div>
         </div>
 
@@ -40,7 +40,7 @@
                 <a id="register_window_button" >Not a member? Register here</a>
             </div>
             <div class="col-md-6 text-left">
-                <input type="submit" value="Login">
+                <input class="button-to-login" type="submit" value="Login">
             </div>
         </div>
 
