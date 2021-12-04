@@ -68,6 +68,8 @@ span {
     margin: 10px;
     text-align: center;
     color:white;
+    margin-bottom: 20px;;
+
 }
 
 .tab-button {
@@ -180,6 +182,13 @@ span {
     bottom: 0;
     transition-duration: 0.3s;
     width: 100%;
+}
+
+.table-container {
+    max-height: 800px;
+    overflow: auto;
+    margin-bottom: 50px;
+    border: 1px solid #dddddd;
 }
 
 table {
@@ -380,10 +389,10 @@ height: 30px;
 ::-webkit-scrollbar {
   width: 10px;
 }
-s
+
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #252525;
+    background: #252525;
 }
 
 /* Handle */

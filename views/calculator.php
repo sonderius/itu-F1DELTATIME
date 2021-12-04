@@ -1,5 +1,4 @@
 <div style="width: 80%; margin: auto" id="calculator">
-    <div id="calculator-bg">
     <div class="row">
         <div class="col-md-12 text-center">
             <h1>Season</h1>
@@ -157,8 +156,6 @@
         </div>
     </div>
 
-    </div>
-
     <div>
         <table>
             <tr>
@@ -172,11 +169,12 @@
                 <th>Aggression</th>
                 <th>Concentration</th>
                 <th>Details/Save</th>
+                <th>&nbsp;&nbsp;</th>
             </tr>
         </table>
     </div>
 
-    <div style="height: 300px; overflow: auto;">
+    <div class="table-container">
         <table id="table">
         </table>
     </div>

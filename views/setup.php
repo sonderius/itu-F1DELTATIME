@@ -42,7 +42,7 @@
         </table>
     </div>
     
-    <div>
+    <div class="table-container">
         <table id="saved-table">
         </table>
     </div>
