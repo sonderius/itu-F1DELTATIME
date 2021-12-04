@@ -3,35 +3,35 @@
         <span class="close">&times;</span>
         <div id="setupDetail" class="grid-container">
             <div class="grid-item"></div>
-            <div class="grid-item"><img src="../Images/Parts/car.png"></div>
+            <div class="grid-item"><img src="./images/Parts/car.png"></div>
             <div class="grid-item"></div>
-            <div class="grid-item"><img src="../Images/Parts/tyres.png"></div>
+            <div class="grid-item"><img src="./images/Parts/tyres.png"></div>
             <div class="grid-item"></div>
-            <div class="grid-item"><img src="../Images/Parts/turbo.png"></div>
+            <div class="grid-item"><img src="./images/Parts/turbo.png"></div>
             <div class="grid-item"></div>
-            <div class="grid-item"><img src="../Images/Parts/suspension.png"></div>
+            <div class="grid-item"><img src="./images/Parts/suspension.png"></div>
             <div class="grid-item"></div>
-            <div class="grid-item"><img src="../Images/Parts/brakes.png"></div>
+            <div class="grid-item"><img src="./images/Parts/brakes.png"></div>
             <div class="grid-item"></div>
-            <div class="grid-item"><img src="../Images/Parts/rearWing.png"></div>
+            <div class="grid-item"><img src="./images/Parts/rearWing.png"></div>
             <div class="grid-item"></div>
-            <div class="grid-item"><img src="../Images/Parts/battery.png"></div>
+            <div class="grid-item"><img src="./images/Parts/battery.png"></div>
             <div class="grid-item"></div>
-            <div class="grid-item"><img src="../Images/Parts/frontWing.png"></div>
+            <div class="grid-item"><img src="./images/Parts/frontWing.png"></div>
             <div class="grid-item"></div>
-            <div class="grid-item"><img src="../Images/Parts/ice.png"></div>
+            <div class="grid-item"><img src="./images/Parts/ice.png"></div>
             <div class="grid-item"></div>
-            <div class="grid-item"><img src="../Images/Parts/gearbox.png"></div>
+            <div class="grid-item"><img src="./images/Parts/gearbox.png"></div>
             <div class="grid-item"></div>
-            <div class="grid-item"><img src="../Images/Parts/driver.png"></div>
+            <div class="grid-item"><img src="./images/Parts/driver.png"></div>
             <div class="grid-item"></div>
-            <div class="grid-item"><img src="../Images/Parts/gloves.png"></div>
+            <div class="grid-item"><img src="./images/Parts/gloves.png"></div>
             <div class="grid-item"></div>
-            <div class="grid-item"><img src="../Images/Parts/boots.png"></div>
+            <div class="grid-item"><img src="./images/Parts/boots.png"></div>
             <div class="grid-item"></div>
-            <div class="grid-item"><img src="../Images/Parts/helmet.png"></div>
+            <div class="grid-item"><img src="./images/Parts/helmet.png"></div>
             <div class="grid-item"></div>
-            <div class="grid-item"><img src="../Images/Parts/suit.png"></div>
+            <div class="grid-item"><img src="./images/Parts/suit.png"></div>
         </div>
         <div>
             <table>
