@@ -1,4 +1,4 @@
-<div id="setup">
+<div style="width: 80%; margin: auto" id="setup">
 
     <div class="row">
         <div class="col-md-12 text-center">
@@ -10,7 +10,7 @@
         <div class="col-md-6 text-right">
             <div class="radio-button">
                 <div class="season-button">
-                    <input type="radio" id="setup-2019" name="setup-season" onclick="show2019()" />
+                    <input type="radio" id="setup-2019" name="setup-season" onchange="loadSetups(this.id.substr(6))" required />
                     <label for="setup-2019">2019</label>
                 </div>
             </div>
@@ -18,13 +18,13 @@
         <div class="col-md-6 text-left">
             <div class="radio-button">
                 <div class="season-button">
-                    <input type="radio" id="setup-2020" name="setup-season" onclick="show2020()" />
+                    <input type="radio" id="setup-2020" name="setup-season" onchange="loadSetups(this.id.substr(6))" required />
                     <label for="setup-2020">2020</label>
                 </div>
             </div>
         </div>
     </div>
-    
+
     <div>
         <table>
             <tr>
@@ -45,7 +45,7 @@
     <div id="show-setup-table-2019">
         <div style="height: 300px; overflow: auto;">
             <table>
-            <?php 
+            <?php
                 // Relative path from logic.php file
                 $setupId = loadSetups('./data/2019/setups/xxx.csv');
                 $parts = loadParts('./data/2019/parts.csv');
@@ -62,8 +62,8 @@
                     echo "<td>" . $result[5] . "</td>";
                     echo "<td>" . $result[6] . "</td>";
                     echo "<td>" . $result[7] . "</td>";
-                    echo "<td>" . $result[8] . "</td>"; 
-                    echo "<td>" . '<i onclick="setupShowDetail(this)" class="fa fa-search" style="padding-right: 20px;">' . "</td>"; 
+                    echo "<td>" . $result[8] . "</td>";
+                    echo "<td>" . '<i onclick="setupShowDetail(this)" class="fa fa-search" style="padding-right: 20px;">' . "</td>";
                     echo "</tr>";
                 }
             ?>
@@ -78,7 +78,7 @@
                 // Relative path from logic.php file
                 $setupId = loadSetups('./data/2020/setups/xxx.csv');
                 $parts = loadParts('./data/2020/parts.csv');
-    
+
                 for($i = 0; isset($setupId[$i]); $i++)
                 {
                     $result = setupStats($setupId[$i], $parts);
@@ -91,8 +91,8 @@
                     echo "<td>" . $result[5] . "</td>";
                     echo "<td>" . $result[6] . "</td>";
                     echo "<td>" . $result[7] . "</td>";
-                    echo "<td>" . $result[8] . "</td>"; 
-                    echo "<td>" . '<i onclick="setupShowDetail(this)" class="fa fa-search" style="padding-right: 20px;">' . "</td>"; 
+                    echo "<td>" . $result[8] . "</td>";
+                    echo "<td>" . '<i onclick="setupShowDetail(this)" class="fa fa-search" style="padding-right: 20px;">' . "</td>";
                     echo "</tr>";
                 }
             ?>

@@ -4,7 +4,7 @@ var modal = document.getElementById("myModal");
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
-function showDetail(button) {
+function showDetail(button, season) {
     modal.style.display = "block";
     const xmlhttp = new XMLHttpRequest();
     xmlhttp.onload = function() {
@@ -20,7 +20,7 @@ function showDetail(button) {
         for (var i = 0; i < summaryCells.length; i++)
             summaryCells[i].innerHTML = summary[i];
     }
-    xmlhttp.open("GET", "./scripts/php/setupInfo.php?setupId=" + button.parentElement.id + "&season=" + getSelectedRadioButton("season"));
+    xmlhttp.open("GET", "./scripts/php/setupInfo.php?setupId=" + button.parentElement.id + "&season=" + season);
     xmlhttp.send();
 }
 

@@ -118,7 +118,12 @@ function saveSetup($setupId, $fileName) {
 
 function removeSetup($setupId, $fileName) {
     $setups = loadSetups($fileName);
-    unset($setups[array_search($setupId, $setups)]);
+    for ($i = 0; $i < count($setups); $i++) {
+        if ($setups[$i] == $setupId) {
+            array_splice($setups, $i, 1);
+            break;
+        }
+    }
     $file = fopen($fileName, 'w');
     for ($i = 0; $i < count($setups); $i++)
         fputcsv($file, $setups[$i]);
