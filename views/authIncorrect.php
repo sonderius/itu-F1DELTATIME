@@ -10,15 +10,11 @@
             </div>
         </div>
 
-        <form action="scripts/php/auth.php" method="POST">
-
         <div class="row">
             <div class="col-md-12 text-center">
                 <input id="incorrect_window_button" class="button-to-login" type="submit" value="Ok">
             </div>
         </div>
-
-        </form>
 
     </div>
 </div>

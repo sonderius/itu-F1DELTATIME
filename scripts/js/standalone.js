@@ -32,9 +32,7 @@ function changePage(page)
             break;
     }
 }
-function jsLogout(){
-    console.log('odhlasujem');
-}
+
 function show2019() 
 {
     document.getElementById("show-setup-table-2020").style.display = "none";

@@ -31,9 +31,8 @@ login_window.onclick = function(event) {
 
 
 incorrect_window_button.onclick = function() {
-    duplicate_user_window.style.display = "none";
+    incorrect_window.style.display = "none";
 }
-
 
 incorrect_window.onclick = function(event) {
   if (event.target == incorrect_window) {
