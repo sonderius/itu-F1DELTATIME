@@ -47,11 +47,15 @@
                 }
                 else
                 {
-                    echo '<form action="scripts/php/auth.php" style="height: 0;" method="post">';
-                    echo '<input type="hidden" name="logout" value="true">';
-                    echo '<input class="tab-button" type="submit" value="Logout">';
-                    echo '<div id="login_window_button"></div>';
-                    echo '</form>';
+                    echo '<form method="post">
+                    <input type="hidden" name="logout" value="true">';
+                            echo '<button type="submit" onclick="';
+                           echo 'jsLogout()';
+                            echo '" class="tab-button">Logout</button>';
+                            echo "<div id=login_window_button style='display:none'></div>";
+                            echo "<div id='logout-placeholder'></div>";
+                               echo '</form>';
+    
                 }
 
                 ?>
