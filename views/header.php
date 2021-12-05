@@ -6,21 +6,12 @@
                 <?php
                 if(isset($_SESSION['username']))
                 {
-                    // Workaround, kvuli nefungujicimu session_destroy();
-                    if(strcmp($_SESSION['username'], "LOGGED_OUT_USER") == 0)
-                    {
-                        echo "<img class='pfp-select-img' src='images/pfp/pfp_0.png'>";
-                        echo "<div class='white'>Not logged in</div>";
-                    }
-                    else
-                    {
                     echo "<img class='pfp-select-img' src='";
                     echo $_SESSION['path_to_pfp'];
                     echo "'>";
                     echo "<div class='white'>Logged in as <b>";
                     echo $_SESSION['username'];
                     echo "</b></div>";
-                    }
                 }
                 else
                 {
@@ -52,22 +43,11 @@
                 }
                 else
                 {
-                    // Workaround, kvuli nefungujicimu session_destroy();
-                    if(strcmp($_SESSION['username'], "LOGGED_OUT_USER") == 0)
-                    {
-                        echo '<button class="tab-button" id="login_window_button">Login</button>';
-                    }
-                    else
-                    {
-                        echo '<form style="height: 0;" method="post">';
-                        echo '<input type="hidden" name="logout" value="true">';
-                        echo '<button type="button" onclick="';
-                        echo 'jsLogout()';
-                        echo '" class="tab-button">Logout</button>';
-                        echo '<div id="login_window_button"></div>';
-                        echo "<div id='logout-placeholder'></div>";
-                        echo '</form>';
-                    }
+                    echo '<form action="scripts/php/auth.php" style="height: 0;" method="post">';
+                    echo '<input type="hidden" name="logout" value="true">';
+                    echo '<input class="tab-button" type="submit" value="Logout">';
+                    echo '<div id="login_window_button"></div>';
+                    echo '</form>';
                 }
 
                 ?>

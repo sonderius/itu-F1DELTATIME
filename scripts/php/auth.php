@@ -29,8 +29,15 @@ if(isset($_POST['login']))
         header('Location: /?unknownUser');
         exit();
     }
-
 }
+
+if(isset($_POST['logout']))
+{
+    header('Location: /?logout');
+    exit();
+}
+
+
 
 header('Location: /');
 exit();

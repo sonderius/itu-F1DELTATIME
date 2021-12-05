@@ -28,10 +28,6 @@ function changePage(page)
             break;
     }
 }
-function jsLogout()
-{
-    console.log('odhlasujem');
-}
 
 function show2019() 
 {

@@ -26,10 +26,9 @@
             include "scripts/php/standalone.php";
 
             include "scripts/php/logic.php";
-
-            if (isset($_POST['logout'])){
-                logout();
-                header('Location: ' . "" );
+            
+            if (isset($_GET['logout'])){
+                $_SESSION['username'] = NULL;
             }
 
             include "views/header.php";
