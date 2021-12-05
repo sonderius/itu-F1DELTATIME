@@ -2,9 +2,8 @@ var login_window = document.getElementById("login_window");
 var login_window_button = document.getElementById("login_window_button");
 var login_window_close = document.getElementsByClassName("login_window_close")[0];
 
-var duplicate_user_window = document.getElementById("duplicate_user_window");
-var duplicate_user_window_button = document.getElementById("duplicate_user_window_button");
-var duplicate_user_window_close = document.getElementsByClassName("duplicate_user_window_close")[0];
+var incorrect_window = document.getElementById("incorrect_window");
+var incorrect_window_close = document.getElementsByClassName("incorrect_window_close")[0];
 
 var register_window = document.getElementById("register_window");
 var register_window_button = document.getElementById("register_window_button");
@@ -26,13 +25,13 @@ login_window.onclick = function(event) {
 
 
 
-duplicate_user_window_close.onclick = function() {
-  duplicate_user_window.style.display = "none";
+incorrect_window_button.onclick = function() {
+    duplicate_user_window.style.display = "none";
 }
 
-duplicate_user_window.onclick = function(event) {
-  if (event.target == duplicate_user) {
-    duplicate_user.style.display = "none";
+incorrect_window.onclick = function(event) {
+  if (event.target == incorrect_window) {
+    incorrect_window.style.display = "none";
   }
 }
 
@@ -53,11 +52,4 @@ register_window.onclick = function(event) {
   }
 }
 
-function duplicateUser()
-{   
-    alert("afdfad");
-    login_window.style.display = "none";
-    register_window.style.display = "none";
-    duplicate_user_window.style.display = "block";
-}
 

@@ -39,18 +39,14 @@ function register($username, $password, $pfp)
         {
             // Duplicate user
 
-
-            echo '<script type="text/javascript">';
-            echo 'duplicateUser();';
-            echo '</script>';
-
-            return;
+            return 1;
         }
     }
 
     $file = new SplFileObject('../../data/user/credentials.csv', 'a');
     $file->fputcsv(array($username, $password, $pfp));
     login($username, $password);
+    return 0;
 }
 
 function login($username, $password)
@@ -72,7 +68,12 @@ function login($username, $password)
                 $_SESSION['username'] = $username;
                 $_SESSION['password'] = $password;
                 $_SESSION['path_to_pfp'] = getPfpPath($username);
+                return 0;
+            }else
+            {
+                return 1;
             }
         }
     }
+    return 2;
 }

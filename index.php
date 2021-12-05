@@ -12,6 +12,8 @@
         <title>F1 Delta Time</title>
 
         <script src="scripts/js/calculator.js"></script>
+        <script src="scripts/js/authPre.js"></script>
+
     </head>
 
     <body>
@@ -40,6 +42,26 @@
             include "views/login.php";
             include "views/register.php";
 
+            if(isset($_GET['duplicateUser']))
+            {
+                echo "<script>";
+                echo "duplicateUser();";
+                echo "</script>";
+            }
+
+            if(isset($_GET['unknownUser']))
+            {
+                echo "<script>";
+                echo "unknownUser();";
+                echo "</script>";
+            }
+
+            if(isset($_GET['badPassword']))
+            {
+                echo "<script>";
+                echo "badPassword();";
+                echo "</script>";
+            }
         ?>
 
     </body>
