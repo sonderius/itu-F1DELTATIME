@@ -17,7 +17,13 @@ if(isset($_POST['login']))
     login($_POST['username'], $_POST['password']);
 }
 
+<<<<<<< Updated upstream
 header('Location: /');
 exit();
+=======
+
+
+header('Location: ' . $_SERVER['HTTP_REFERER']);
+>>>>>>> Stashed changes
 
 
