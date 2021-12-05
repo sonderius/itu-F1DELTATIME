@@ -1,3 +1,7 @@
+<!-- ITU F1 Delta Time Calculator -->
+<!-- login window -->
+<!-- Author: Kodousek Ondrej - xkodou00 -->
+
 <div id="login_window" class="login_window" >
     <div class="login_window-content">
         <span class="login_window_close">&times;</span>

@@ -1,4 +1,9 @@
 <?php
+# ITU F1 Delta Time Calculator
+# authentication
+# Author: Kodousek Ondrej - xkodou00
+# Author: Zavodsky Lubomir - xzavod14
+
 include "standalone.php";
 
 /*

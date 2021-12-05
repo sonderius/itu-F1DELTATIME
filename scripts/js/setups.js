@@ -1,3 +1,7 @@
+// ITU F1 Delta Time Calculator
+// file for displaying setups
+// Author: Zavodsky Lubomir - xzavod14
+
 function loadSetups(selectedSeason) {
     const xmlhttp = new XMLHttpRequest();
     xmlhttp.onload = function() {

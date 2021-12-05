@@ -1,3 +1,7 @@
+<!-- ITU F1 Delta Time Calculator -->
+<!-- widow for track assignment -->
+<!-- Author: Janciar Marek - xjanci14 -->
+
 <div id="trackWindow" class="modal">
     <div id="setupId" class="modal-content">
         <span id="trackClose" class="close">&times;</span>

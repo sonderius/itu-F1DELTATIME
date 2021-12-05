@@ -1,3 +1,7 @@
+<!-- ITU F1 Delta Time Calculator -->
+<!-- track tab -->
+<!-- Author: Kodousek Ondrej - xkodou00 -->
+
 <div style="width: 50%; margin: auto" id="track">
     <div style="text-align: center;">
         <div class="radio-button">

@@ -1,4 +1,8 @@
 <?php
+# ITU F1 Delta Time Calculator
+# file for getting info about setup
+# Author: Janciar Marek - xjanci14
+
 include './logic.php';
 
 $setupId = explode(',', $_GET['setupId']);

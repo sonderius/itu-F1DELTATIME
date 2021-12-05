@@ -1,3 +1,7 @@
+<!-- ITU F1 Delta Time Calculator -->
+<!-- index file -->
+<!-- Author: Kodousek Ondrej - xkodou00 -->
+<!-- Author: Zavodsky Lubomir - xzavod14 -->
 <html>
     <head>
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">

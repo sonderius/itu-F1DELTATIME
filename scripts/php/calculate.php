@@ -1,4 +1,8 @@
 <?php
+# ITU F1 Delta Time Calculator
+# file for asynchronous calculation of setups
+# Author: Janciar Marek - xjanci14
+
 include './logic.php';
 
 header('Content-Type: text/event-stream');

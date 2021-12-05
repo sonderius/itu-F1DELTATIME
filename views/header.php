@@ -1,3 +1,7 @@
+<!-- ITU F1 Delta Time Calculator -->
+<!-- website header -->
+<!-- Author: Kodousek Ondrej - xkodou00 -->
+
 <div id="header">
     <div class="row">
         <div class="col-md-5 text-left">

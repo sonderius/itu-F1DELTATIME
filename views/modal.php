@@ -1,3 +1,7 @@
+<!-- ITU F1 Delta Time Calculator -->
+<!-- setup detail window -->
+<!-- Author: Janciar Marek - xjanci14 -->
+
 <div id="myModal" class="modal">
     <div class="modal-content">
         <span id="detailClose" class="close">&times;</span>

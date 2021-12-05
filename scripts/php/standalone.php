@@ -1,4 +1,8 @@
 <?php
+# ITU F1 Delta Time Calculator
+# functions for login/registration
+# Author: Kodousek Ondrej - xkodou00
+# Author: Zavodsky Lubomir - xzavod14
 
 function getPfpPath($username)
 {

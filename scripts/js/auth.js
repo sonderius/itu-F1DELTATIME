@@ -1,3 +1,8 @@
+// ITU F1 Delta Time Calculator
+// authentication
+// Author: Kodousek Ondrej - xkodou00
+// Author: Zavodsky Lubomir - xzavod14
+
 var login_window = document.getElementById("login_window");
 var login_window_button = document.getElementById("login_window_button");
 var login_window_close = document.getElementsByClassName("login_window_close")[0];

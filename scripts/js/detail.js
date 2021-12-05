@@ -1,3 +1,7 @@
+// ITU F1 Delta Time Calculator
+// file for showing detail of setup
+// Author: Janciar Marek - xjanci14
+
 // Get the modal
 var modal = document.getElementById("myModal");
 

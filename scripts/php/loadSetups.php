@@ -1,4 +1,8 @@
 <?php
+# ITU F1 Delta Time Calculator
+# file for loading setups
+# Author: Zavodsky Lubomir - xzavod14
+
 include './logic.php';
 
 $season = $_GET['season'];

@@ -1,3 +1,7 @@
+// ITU F1 Delta Time Calculator
+// file for receiving asynchronous calculation of setups
+// Author: Janciar Marek - xjanci14
+
 var es;
 
 function getSelectedRadioButton(name) {

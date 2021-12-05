@@ -1,4 +1,8 @@
 <?php
+# ITU F1 Delta Time Calculator
+# file for getting assigned setup to track
+# Author: Kodousek Ondrej - xkodou00
+
 include './logic.php';
 
 $season = $_GET['season'];

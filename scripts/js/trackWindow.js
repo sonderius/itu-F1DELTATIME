@@ -1,3 +1,7 @@
+// ITU F1 Delta Time Calculator
+// functions for changing tabs
+// Author: Janciar Marek - xjanci14
+
 // Get the modal
 var trackWindow = document.getElementById("trackWindow");
 

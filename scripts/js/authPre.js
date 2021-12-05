@@ -1,3 +1,8 @@
+// ITU F1 Delta Time Calculator
+// functions for authentication errors
+// Author: Kodousek Ondrej - xkodou00
+// Author: Zavodsky Lubomir - xzavod14
+
 function duplicateUser()
 {   
     login_window.style.display = "none";

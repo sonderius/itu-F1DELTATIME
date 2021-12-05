@@ -1,3 +1,7 @@
+<!-- ITU F1 Delta Time Calculator -->
+<!-- calculator tab -->
+<!-- Author: Janciar Marek - xjanci14 -->
+
 <div style="width: 80%; margin: auto" id="calculator">
     <div class="row">
         <div class="col-md-12 text-center">

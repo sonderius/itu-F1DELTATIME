@@ -1,3 +1,7 @@
+// ITU F1 Delta Time Calculator
+// functions for changing tabs
+// Author: Kodousek Ondrej - xkodou00
+
 function changePage(page)
 {
     switch(page)

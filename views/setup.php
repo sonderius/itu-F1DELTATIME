@@ -1,3 +1,7 @@
+<!-- ITU F1 Delta Time Calculator -->
+<!-- setup tab -->
+<!-- Author: Zavodsky Lubomir - xzavod14 -->
+
 <div style="width: 80%; margin: auto" id="setup">
 
     <div class="row">

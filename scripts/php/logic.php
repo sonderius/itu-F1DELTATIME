@@ -1,4 +1,7 @@
 <?php
+# ITU F1 Delta Time Calculator
+# functions for working with data
+# Author: Janciar Marek - xjanci14
 
 abstract class Part {
     const Car = 0;
