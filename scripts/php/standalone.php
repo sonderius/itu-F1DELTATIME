@@ -43,7 +43,15 @@ function register($username, $password, $pfp)
     login($username, $password);
     return 0;
 }
+function logout()
+{
+    session_destroy();// ani nic podobneho tu proste nejede
+   //unset($_SESSION[$login]);
+    $_SESSION['username'] = "LOGGED_OUT_USER";
+    $_SESSION['password'] = 0;
+   $_SESSION['path_to_pfp'] = 0;
 
+}
 function login($username, $password)
 {
     $csv = array_map('str_getcsv', file("../../data/user/credentials.csv"));
