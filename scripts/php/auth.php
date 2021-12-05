@@ -26,7 +26,7 @@ if(isset($_POST['login']))
     $return_code = login($_POST['username'], $_POST['password']);
     if($return_code == 1)
     {
-        header('Location: /?badPassword');
+        header('Location: ' . $_SERVER['HTTP_REFERER']);
         exit();
     }
     elseif($return_code == 2)
