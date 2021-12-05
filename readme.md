@@ -1,10 +1,11 @@
 TODO:\
-Track tab - co to vůbec má dělat?\
-Ošetření přihlašování a registrace - existující uživatel, zpráva uživatelovi, že zadal špatné heslo atd.\
+Track tab\
 Design\
 Komentáře v kódu\
+Technická zpráva\
 
+Stránka\
 https://itu-kodou.herokuapp.com/
 
-Technická zpráva
+Technická zpráva\
 https://www.overleaf.com/5272561655ttbmdtgrjpnj
