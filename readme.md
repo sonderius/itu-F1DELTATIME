@@ -1,5 +1,4 @@
 TODO:\
-Track tab\
 Design\
 Komentáře v kódu\
 Technická zpráva\
