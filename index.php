@@ -31,10 +31,10 @@
 
             include "scripts/php/logic.php";
             
-            if (isset($_GET['logout'])){
-                $_SESSION['username'] = NULL;
-            }
-
+            if (isset($_POST['logout'])){
+                logout();
+                   header('Location: ' ."" );
+             }
             include "views/header.php";
 
             include "views/calculator.php";
