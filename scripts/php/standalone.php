@@ -1,14 +1,5 @@
 <?php
 
- function logout()
-{
-    session_destroy();
-
-    $_SESSION['username'] = "LOGGED_OUT_USER";
-    $_SESSION['password'] = 0;
-    $_SESSION['path_to_pfp'] = 0;
-}
-
 function getPfpPath($username)
 {
     $csv = array_map('str_getcsv', file("../../data/user/credentials.csv"));
