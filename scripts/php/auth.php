@@ -44,7 +44,7 @@ if(isset($_POST['logout']))
 
 
 
-header('Location: ' . $_SERVER['HTTP_REFERER']);
+header('Location: ../../');
 exit();
 
 
