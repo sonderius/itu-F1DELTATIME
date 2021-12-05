@@ -15,7 +15,7 @@ function loadSetups(selectedSeason) {
                 cell.innerHTML = result[x].stats[i];
             }
             var cell = row.insertCell(result[x].stats.length);
-            cell.innerHTML = '<i onclick="showDetail(this, getSelectedRadioButton(\'setup-season\').substr(6))" class="fa fa-search" style="padding-right: 20px;"></i><i onclick="deleteSetup(this.parentElement.id)" class="fa fa-trash-o" style="padding-right: 20px;"></i>';
+            cell.innerHTML = '<i onclick="showDetail(this, getSelectedRadioButton(\'setup-season\').substr(6))" class="fa fa-info" style="padding-right: 20px;"></i><i onclick="showTracks(this.parentElement.id)" class="fa fa-compass" style="padding-right: 20px;"></i><i onclick="deleteSetup(this.parentElement.id)" class="fa fa-trash-o" style="padding-right: 20px;"></i>';
             cell.id = result[x].setupId;
         }
     }
@@ -24,7 +24,6 @@ function loadSetups(selectedSeason) {
 }
 
 function deleteSetup(setupId) {
-    alert(setupId);
     var selectedSeason = getSelectedRadioButton('setup-season').substr(6);
     const xmlhttp = new XMLHttpRequest();
     xmlhttp.onload = function() {

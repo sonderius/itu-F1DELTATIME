@@ -15,7 +15,7 @@
             <img width="auto" height="150" src="./images/tracks/hungaroring.png">
         </div>
         <div class="col-md-4 text-center">
-            <img width="auto" height="150" src="./images/tracks/image.png">
+            <img width="auto" height="150" src="./images/tracks/bahrain.png">
         </div>
         <div class="col-md-4 text-center">
             <img width="auto" height="150" src="./images/tracks/imola.png">

@@ -1,6 +1,6 @@
 <div id="myModal" class="modal">
     <div class="modal-content">
-        <span class="close">&times;</span>
+        <span id="detailClose" class="close">&times;</span>
         <div id="setupDetail" class="grid-container">
             <div class="grid-item"></div>
             <div class="grid-item"><img src="./images/parts/car.png"></div>

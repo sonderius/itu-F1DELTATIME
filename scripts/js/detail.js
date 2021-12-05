@@ -2,7 +2,7 @@
 var modal = document.getElementById("myModal");
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+var span = document.getElementById("detailClose");
 
 function showDetail(button, season) {
     modal.style.display = "block";

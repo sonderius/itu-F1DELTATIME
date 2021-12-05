@@ -40,7 +40,7 @@ function startCalculating() {
                     cell.innerHTML = result.message[i];
                 }
                 var cell = row.insertCell(result.message.length);
-                cell.innerHTML = '<i onclick="showDetail(this, getSelectedRadioButton(\'season\'))" class="fa fa-search" style="padding-right: 20px;"></i><i onclick="save(this)" class="fa fa-save" style="padding-left: 20px;"></i>';
+                cell.innerHTML = '<i onclick="showDetail(this, getSelectedRadioButton(\'season\'))" class="fa fa-info" style="padding-right: 20px;"></i><i onclick="save(this)" class="fa fa-save" style="padding-left: 20px;"></i>';
                 cell.id = result.setupId;
             }
         }

@@ -38,6 +38,7 @@
             include "views/setup.php";
             include "views/track.php";
             include "views/modal.php";
+            include "views/trackWindow.php";
             include "views/authIncorrect.php";
             include "views/login.php";
             include "views/register.php";
@@ -72,4 +73,5 @@
 <script src="scripts/js/detail.js"></script>
 <script src="scripts/js/standalone.js"></script>
 <script src="scripts/js/setups.js"></script>
+<script src="scripts/js/trackWindow.js"></script>
 

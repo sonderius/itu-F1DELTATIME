@@ -54,8 +54,7 @@ function loadParts($fileName) {
             $parts[$data[0]][] = array($data[1], $data[2], $data[3]);
         }
         fclose($file);
-    }else
-    {
+    } else {
         echo "BAD PATH TO THE PART FILE";
     }    
     return $parts;

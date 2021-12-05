@@ -102,15 +102,12 @@ span {
 }
 
 .radio-button {
-    width: 100%;
-    padding: 8px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     color: white;
     font-size: 24px;
-    margin: 8px;
-    width: 300px;
+    width: auto;
 }
   
 .radio-button label,
@@ -121,8 +118,7 @@ span {
     right: 0;
     bottom: 0;
     transition-duration: 0.3s;
-    width: 80%;
-    margin-left: 8%; /* 10% out of 80% = 8% */
+    width: 250px;
     border-radius: 20px;
     background-color: red;
 }
@@ -172,6 +168,7 @@ span {
 
 .season-button {
     display: inline-block;
+    width: 100px;
 }
 
 .season-button label,
@@ -264,6 +261,13 @@ table button {
     grid-template-columns: auto auto auto auto auto auto;
     padding: 10px;
 }
+
+.track-grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+}
+
 .grid-item {
     padding: 20px;
     font-size: 30px;

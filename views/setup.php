@@ -24,8 +24,9 @@
             </div>
         </div>
     </div>
-    
+
     <div>
+        </br>
         <table>
             <tr>
                 <th>Total</th>
