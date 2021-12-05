@@ -16,7 +16,7 @@ if(isset($_POST['register']))
 {
     if(register($_POST['username'], $_POST['password'], $_POST['pfp'])){
         // Duplicate user
-        header('Location: /?duplicateUser');
+        header('Location: ../../?duplicateUser');
         exit();
     }
 }
@@ -26,19 +26,19 @@ if(isset($_POST['login']))
     $return_code = login($_POST['username'], $_POST['password']);
     if($return_code == 1)
     {
-        header('Location: /?badPassword');
+        header('Location: ../../?badPassword');
         exit();
     }
     elseif($return_code == 2)
     {
-        header('Location: /?unknownUser');
+        header('Location: ../../?unknownUser');
         exit();
     }
 }
 
 if(isset($_POST['logout']))
 {
-    header('Location: /?logout');
+    header('Location: ../../?logout');
     exit();
 }
 
