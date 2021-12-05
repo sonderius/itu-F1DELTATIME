@@ -1,6 +1,6 @@
 <div id="register_window" class="login_window" >
     <div class="login_window-content">
-        <span class="register_window_close">X</span>
+        <span class="register_window_close">&times;</span>
 
         <div class="row">
             <div class="col-md-12 text-center">

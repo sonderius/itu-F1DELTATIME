@@ -3,7 +3,7 @@ var login_window_button = document.getElementById("login_window_button");
 var login_window_close = document.getElementsByClassName("login_window_close")[0];
 
 var incorrect_window = document.getElementById("incorrect_window");
-var incorrect_window_close = document.getElementsByClassName("incorrect_window_close")[0];
+var incorrect_window_button = document.getElementById("incorrect_window_button");
 
 var register_window = document.getElementById("register_window");
 var register_window_button = document.getElementById("register_window_button");
@@ -28,6 +28,7 @@ login_window.onclick = function(event) {
 incorrect_window_button.onclick = function() {
     duplicate_user_window.style.display = "none";
 }
+
 
 incorrect_window.onclick = function(event) {
   if (event.target == incorrect_window) {
