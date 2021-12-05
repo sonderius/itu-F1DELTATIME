@@ -143,20 +143,20 @@ function loadTracks($fileName) {
     return $tracks;
 }
 
-# returns setupId assigned to track (0-15), weather(0-4), tier(0-4)
+# returns setupId assigned to track (0-14), weather(0-3), tier(0-3)
 function assignSetup($setupId, $track, $weather, $tier, $fileName)
 {
     $tracks = loadTracks($fileName);
-    $tracks[$track * 16 + $weather * 4 + $tier] = $setupId;
+    $tracks[$track * 15 + $weather * 4 + $tier] = $setupId;
     $file = fopen($fileName, 'w');
     for ($i = 0; $i < count($tracks); $i++)
         fputcsv($file, $tracks[$i]);
     fclose($file);
 }
 
-# assigns setupId to track (0-15), weather(0-4), tier(0-4)
+# assigns setupId to track (0-14), weather(0-3), tier(0-3)
 function getAssignedSetup($track, $weather, $tier, $fileName)
 {
     $tracks = loadTracks($fileName);
-    return $tracks[$track * 16 + $weather * 4 + $tier];
+    return $tracks[$track * 15 + $weather * 4 + $tier];
 }

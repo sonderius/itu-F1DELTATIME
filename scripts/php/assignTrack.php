@@ -7,7 +7,7 @@ $weather = $_GET['weather'];
 $track = $_GET['track'];
 $parts = loadParts('../../data/' . $_GET['season'] . '/parts.csv');
 
-$setupTotal = setupDetail($setupId, $parts)[0];
+$setupTotal = setupStats($setupId, $parts)[0];
 $tier = 0;
 if ($setupTotal > Tier::D)
     $tier = 1;
@@ -16,4 +16,4 @@ if ($setupTotal > Tier::C)
 if ($setupTotal > Tier::B)
     $tier = 3;
 
-assignSetup($setupId, $track, $weather, $tier, '../../data/' . $_GET['season'] . '/Tracks/yyy.csv');
+assignSetup($setupId, $track, $weather, $tier, '../../data/' . $season . '/Tracks/yyy.csv');

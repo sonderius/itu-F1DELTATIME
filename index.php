@@ -73,4 +73,5 @@
 <script src="scripts/js/standalone.js"></script>
 <script src="scripts/js/setups.js"></script>
 <script src="scripts/js/trackWindow.js"></script>
+<script src="scripts/js/track.js"></script>
 

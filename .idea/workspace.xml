@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b0297b66-d8fa-4d27-9552-1c838d9e83a0" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019/parts.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019/parts.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019/setups/xxx.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019/setups/xxx.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2019/tracks/yyy.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/2019/tracks/yyy.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2020/parts.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/2020/parts.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2020/setups/xxx.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/2020/setups/xxx.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/2020/tracks/yyy.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/2020/tracks/yyy.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/user/credentials.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/user/credentials.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/js/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/js/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/js/authPre.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/js/authPre.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/js/calculator.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/js/calculator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/js/detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/js/detail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/js/setups.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/js/setups.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/js/standalone.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/js/standalone.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/js/trackWindow.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/js/trackWindow.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/php/assignTrack.php" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/php/assignTrack.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/php/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/php/auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/php/calculate.php" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/php/calculate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/php/deleteSetup.php" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/php/deleteSetup.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/php/loadSetups.php" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/php/loadSetups.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/php/logic.php" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/php/logic.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/php/saveSetup.php" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/php/saveSetup.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/php/setupInfo.php" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/php/setupInfo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/php/standalone.php" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/php/standalone.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/authIncorrect.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/authIncorrect.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/calculator.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/calculator.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/modal.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/modal.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/register.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/setup.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/setup.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/track.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/track.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/trackWindow.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/trackWindow.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="21izofMHfK6nM6lG2dYLWIunHo5" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/views" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\itu-F1DELTATIME\views" />
+      <recent name="C:\xampp\htdocs\itu-F1DELTATIME\scripts\js" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b0297b66-d8fa-4d27-9552-1c838d9e83a0" name="Changes" comment="" />
+      <created>1638438872953</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1638438872953</updated>
+      <workItem from="1638438876082" duration="6189000" />
+      <workItem from="1638446421423" duration="15813000" />
+      <workItem from="1638608170145" duration="3361000" />
+      <workItem from="1638612538973" duration="4554000" />
+      <workItem from="1638617896011" duration="2800000" />
+      <workItem from="1638625364188" duration="6866000" />
+      <workItem from="1638692759754" duration="9780000" />
+      <workItem from="1638706456502" duration="4607000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>
