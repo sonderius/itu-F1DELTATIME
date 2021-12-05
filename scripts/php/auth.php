@@ -31,7 +31,7 @@ if(isset($_POST['login']))
     }
     elseif($return_code == 2)
     {
-        header('Location: /?unknownUser');
+        header('Location: ' . $_SERVER['HTTP_REFERER']);
         exit();
     }
 }

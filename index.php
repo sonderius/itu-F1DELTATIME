@@ -26,7 +26,7 @@
 
         <?php
             session_start();
-            print_r($_POST);
+           // print_r($_POST);
             include "scripts/php/standalone.php";
 
             include "scripts/php/logic.php";
